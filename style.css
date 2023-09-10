@@ -1,0 +1,147 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*Sección de inicio*/
+.inicio
+{
+    background-color:whitesmoke;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.inicio .contenido-seccion
+{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.inicio .contenido-seccion header
+{
+    padding: 30px;
+}
+
+.inicio .contenido-seccion header nav
+{
+    position: fixed;
+    margin-left: 80px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.inicio .contenido-seccion header nav a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inicio .contenido-seccion header .nav-bar
+{
+    margin-left: 0%;
+    position:fixed;
+    background-color:white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 5px black;
+}
+
+.inicio .contenido-seccion header .nav-bar:hover
+{
+    box-shadow: 0 0 35px black;
+}
+
+.inicio .contenido-seccion .info
+{
+    padding-bottom: 130px;
+}
+
+.inico .contenido-seccion .info h1
+{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.inico .contenido-seccion .info h2
+{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 5px;
+}
+
+.inicio .contenido-seccion .info .redes
+{
+    margin: 20px 0;
+}
+
+.inicio .contenido-seccion .info .redes a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: 0.5s;
+    box-shadow: 0 0 3px black;
+}
+
+.inicio .contenido-seccion .info .redes a:hover
+{
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 20px black;
+}
+
+.inicio .contenido-seccion .foto img
+{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    transform: translateX(-50%);
+}
+
+/*Sección sobre mí*/
+.sobremi
+{
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    padding: 120px 0 100px;
+    text-align: center;
+    margin-left:100px;
+    margin-right:100px ;
+}
+
+.sobremi h2
+{
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.sobremi h3
+{
+    font-size: 30px;
+    font-weight: bolder;
+}

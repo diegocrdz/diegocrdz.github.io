@@ -1,5 +1,8 @@
 html
 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
     background-color: #8293ff;
@@ -39,12 +42,6 @@ html
     left: 50%;
     top: 50px;
     transform: translateX(-50%);
-    box-shadow: 0 0 100px #1c2875;
-    transition: 0.1s;
-}
-
-.inicio .contenido-seccion .foto:hover
-{
     box-shadow: 0 0 100px #1c2875;
 }
 
@@ -109,8 +106,8 @@ html
     padding-top:10px;
 }
 
-/*Sección sobre mí*/
-.sobremi
+/*Sección profesional*/
+.profesional
 {
     background-color: white;
     padding: 50px 50px 50px;
@@ -123,7 +120,7 @@ html
     box-shadow: 0 0 300px #1c2875;
 }
 
-.sobremi .contenido-seccion
+.profesional .contenido-seccion
 {
     max-width: 800px;
     margin: auto;
@@ -131,14 +128,67 @@ html
     padding: 0 20px;
 }
 
-.sobremi h2
+.profesional h4
 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight:bold;
 }
 
-.sobremi h3
+/*Sección educación*/
+.educacion
 {
-    font-size: 30px;
-    font-weight: bolder;
+    background-color: white;
+    padding: 50px 50px 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    border-radius: 50px;
+    box-shadow: 0 0 300px #1c2875;
+}
+
+.educacion .contenido-seccion
+{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.educacion h4
+{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+/*Sección habilidades*/
+.habilidades
+{
+    background-color: white;
+    padding: 50px 50px 50px;
+    text-align:center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    border-radius: 50px;
+    box-shadow: 0 0 300px #1c2875;
+}
+
+.habilidades .contenido-seccion h1
+{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.habilidades .contenido-seccion
+{
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    padding: 0 20px;
 }

@@ -1,23 +1,73 @@
 html
 {
+    font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
+    background-color: #8293ff;
+    background-size: cover;
+    background-position: center;
 }
 
 /*Sección de inicio*/
 .inicio
 {
-    background-color:whitesmoke;
-    background-size: cover;
-    background-position: center;
-    color: black;
+    background-color: white;
+    padding: 120px 50px 10px;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    border-radius: 50px;
+    box-shadow: 0 0 300px #1c2875;
 }
 
+/*Texto inicio*/
 .inicio .contenido-seccion
 {
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    padding: 0 10px;
+    padding: 0 20px;
+}
+
+/*Foto*/
+.inicio .contenido-seccion .foto img
+{
+    max-width: 350px;
+    border-radius: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 100px #1c2875;
+    transition: 0.1s;
+}
+
+.inicio .contenido-seccion .foto:hover
+{
+    box-shadow: 0 0 100px #1c2875;
+}
+
+/*Opciones flotantes*/
+.inicio .contenido-seccion header .nav-bar
+{
+    margin-left: 0%;
+    position:fixed;
+    background-color:white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+    transform: translateY(-800%);
+    box-shadow: 0 0 50px #1c2875;
+}
+
+.inicio .contenido-seccion header .nav-bar:hover
+{
+    box-shadow: 0 0 100px #1c2875;
 }
 
 .inicio .contenido-seccion header
@@ -46,92 +96,39 @@ html
     font-weight: bold;
 }
 
-.inicio .contenido-seccion header .nav-bar
+.inicio .contenido-seccion .contacto h3
 {
-    margin-left: 0%;
-    position:fixed;
-    background-color:white;
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    line-height: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 0 5px black;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+    padding-top: 50px;
 }
 
-.inicio .contenido-seccion header .nav-bar:hover
+.inicio .contenido-seccion .contacto i
 {
-    box-shadow: 0 0 35px black;
-}
-
-.inicio .contenido-seccion .info
-{
-    padding-bottom: 130px;
-}
-
-.inico .contenido-seccion .info h1
-{
-    font-size: 3rem;
-    letter-spacing: 5px;
-}
-
-.inico .contenido-seccion .info h2
-{
-    font-weight: normal;
-    font-size: 20px;
-    margin-top: -10px;
-    letter-spacing: 5px;
-}
-
-.inicio .contenido-seccion .info .redes
-{
-    margin: 20px 0;
-}
-
-.inicio .contenido-seccion .info .redes a
-{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 5px;
-    transition: 0.5s;
-    box-shadow: 0 0 3px black;
-}
-
-.inicio .contenido-seccion .info .redes a:hover
-{
-    color: white;
-    background-color: black;
-    box-shadow: 0 0 20px black;
-}
-
-.inicio .contenido-seccion .foto img
-{
-    max-width: 200px;
-    border-radius: 50%;
-    border: 5px solid black;
-    position: absolute;
-    left: 50%;
-    top: 350px;
-    transform: translateX(-50%);
+    padding-top:10px;
 }
 
 /*Sección sobre mí*/
 .sobremi
 {
-    font-family: "Roboto", sans-serif;
     background-color: white;
-    padding: 120px 0 100px;
+    padding: 50px 50px 50px;
     text-align: center;
-    margin-left:100px;
-    margin-right:100px ;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    border-radius: 50px;
+    box-shadow: 0 0 300px #1c2875;
+}
+
+.sobremi .contenido-seccion
+{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .sobremi h2

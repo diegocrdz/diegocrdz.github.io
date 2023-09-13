@@ -2,7 +2,8 @@ html
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
     background-color: #8293ff;
@@ -14,12 +15,13 @@ html
 .inicio
 {
     background-color: white;
-    padding: 120px 50px 10px;
+    padding-left: 50px;
+    padding: 120px 50px 50px;
     text-align: center;
     margin-top: 250px;
     margin-left: auto;
     margin-right: auto;
-    width:fit-content;
+    width: fit-content;
     border-radius: 50px;
     box-shadow: 0 0 300px #1c2875;
 }
@@ -37,18 +39,24 @@ html
 .inicio .contenido-seccion .foto img
 {
     max-width: 350px;
+    position:absolute;
     border-radius: 30%;
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    transform: translateX(-50%);
-    box-shadow: 0 0 100px #1c2875;
+    margin-top: -380px;
+    transform:translateX(-50%);
+    box-shadow: 0 0 100px black;
+    cursor: pointer;
+}
+
+.inicio .contenido-seccion .foto img:hover
+{
+    transition: 0.3s;
+    box-shadow: 0 0 100px white;
 }
 
 /*Opciones flotantes*/
 .inicio .contenido-seccion header .nav-bar
 {
-    margin-left: 0%;
+    margin-left: 0px;
     position:fixed;
     background-color:white;
     font-size: 20px;
@@ -57,14 +65,17 @@ html
     border-radius: 50%;
     line-height: 50px;
     cursor: pointer;
-    transition: 0.1s;
-    transform: translateY(-800%);
-    box-shadow: 0 0 50px #1c2875;
+    transition: 0.3s;
+    transform: translate(-150%, -750%);
+    box-shadow: 0 0 50px black;
+    z-index: 100;
 }
 
 .inicio .contenido-seccion header .nav-bar:hover
 {
-    box-shadow: 0 0 100px #1c2875;
+    box-shadow: 0 0 100px white;
+    background-color: #484848;
+    color: white;
 }
 
 .inicio .contenido-seccion header
@@ -80,7 +91,6 @@ html
     padding: 15px;
     border-radius: 10px;
     text-align: left;
-    z-index: 99;
     display: none;
 }
 
@@ -97,13 +107,7 @@ html
 {
     font-size: 30px;
     font-weight: bolder;
-    margin-top: 20px;
-    padding-top: 50px;
-}
-
-.inicio .contenido-seccion .contacto i
-{
-    padding-top:10px;
+    padding-top: 20px;
 }
 
 /*Sección profesional*/

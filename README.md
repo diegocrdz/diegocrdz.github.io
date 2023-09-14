@@ -8,7 +8,7 @@
 
 ## Diego Córdova Rodríguez
 
-![](img.jpeg)
+![](/images/img.jpeg)
 
 ---
 

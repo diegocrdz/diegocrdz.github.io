@@ -7,73 +7,73 @@
     <link rel="stylesheet" href="style.css">
     <title>Diego Córdova Rodríguez</title>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
     <!-- Inicio -->
     <section class="inicio" id="inicio">
-        <div class="contenido-seccion">
 
-            <header>
+        <header>
 
-                <div class="nav-bar">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+            <nav id="nav" class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#profesional">Experiencia Profesional</a>
+                <a href="#educacion">Educacion</a>
+                <a href="#habilidades">Habilidades</a>
+            </nav>
+        </header>
 
-                <nav id="nav" class="nav">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobremi">Sobre mí</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
-
-            </header>
+        <div class="contacto" id="contacto">
 
             <div class="foto">
 
-                <img src="img.jpeg" alt="img">
+                <img src="/images/me.jpeg" alt="me">
 
             </div>
             
-            <div class="nombre">
+            <div class="texto">
 
-                <h1>Diego Córdova Rodríguez</h1>
-                <h2>Trainee de Ingeniería en Tecnologías Computacionales</h2>
-            
-            </div>
-            
-            <div class="contacto">
-
-                <h3>Contacto</h3>
+                <div class="nombre">
+    
+                    <h1>Diego Córdova Rodríguez</h1>
+                    <h2>Trainee de Ingeniería en Tecnologías Computacionales</h2>
                 
-                <div class="correo">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span class="titulo-detalle">CORREO</span>
-                    <p>diegocordova.rdz@hotmail.com</p>
                 </div>
 
-                <div class="telefono">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="titulo-detalle">TELÉFONO</span>
-                    <p>55 6677 5597</p>
+                <div class="contacto" id="contacto">
+    
+                    <h3>Contacto</h3>
+                    
+                    <div class="correo">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="titulo-detalle">CORREO</span>
+                        <p>diegocordova.rdz@hotmail.com</p>
+                    </div>
+    
+                    <div class="telefono">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="titulo-detalle">TELÉFONO</span>
+                        <p>55 6677 5597</p>
+                    </div>
+    
+                    <div class="github">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="titulo-detalle">GITHUB</span>
+                        <p>https://github.com/diegocrdz</p>
+                    </div>
+    
+                    <div class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="titulo-detalle">LINKEDIN</span>
+                        <p>www.linkedin.com/in/diego-córdova-rodríguez</p>
+                    </div>
+    
+                    <div class="sitioweb">
+                        <i class="fa-solid fa-link"></i>
+                        <span class="titulo-detalle">SITIO WEB</span>
+                        <p>https://diegocrdz.github.io/</p>
+                    </div>
                 </div>
-
-                <div class="github">
-                    <i class="fa-brands fa-github"></i>
-                    <span class="titulo-detalle">GITHUB</span>
-                    <p>https://github.com/diegocrdz</p>
-                </div>
-
-                <div class="linkedin">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span class="titulo-detalle">LINKEDIN</span>
-                    <p>www.linkedin.com/in/diego-córdova-rodríguez</p>
-                </div>
-
-                <div class="sitioweb">
-                    <i class="fa-solid fa-link"></i>
-                    <span class="titulo-detalle">SITIO WEB</span>
-                    <p>https://diegocrdz.github.io/</p>
-                </div>
-            
+            </div>
         </div>
     </section>
     <!-- Experiencia Profesional -->
@@ -83,45 +83,49 @@
 
             <h1>Experiencia Profesional</h1>
 
-            <div class="prof1">
-                <h4>Desarrollador</h4>
-                <p>Cree y desarrollé un videojuego llamado Sebas Night Runner en Unity
-                    en los primeros 30 días del inicio del proyecto. El videojuego fue desarrollado
-                    en el lenguaje de programación C# como un juego tipo runner 2D basado en romper
-                    una puntuación y conseguir monedas para así desbloquear diversos objetos como
-                    personajes o niveles. Realicé tanto la programación del videojuego como cada uno
-                    de los diseños y sprites utilizados en el mismo. El juego cuenta con una estética
-                    retro, por lo que se realizaron los diseños en 16 bits junto con un abanico de
-                    habilidades como doble salto.
-                </p>
-                <p>abril-mayo 2023</p>
-            </div>
-
-            <div class="prof2">
-                <h4>Publicidad y estrategias de marketing</h4>
-                <p>Cree y desarrollé durante 4 meses un proyecto de Market Research para una empresa
-                    fotográfica llamada Feeka Photo. Durante la misma, analicé su mercado objetivo, realicé
-                    estudios de marketing a más de 100 personas en diversos rangos de edades para analizar
-                    la retención de la marca y la forma en la que se puede mejorar la relación con el consumidor.
-                    Se analizaron diversas formas de actualizar la página web para fabricar una experiencia
-                    accesible, amigable e interesante para el público tanto en navegadores web como dispositivos
-                    móviles, proponiendo formas en las que se podrían automatizar ciertas acciones para hacerlas
-                    menos repetitivas e intuitivas.
-                </p>
-                <p>noviembre 2022</p>
+            <div class="texto">
+                
+                <div class="prof1">
+                    <h4>Desarrollador</h4>
+                    <p>Cree y desarrollé un videojuego llamado Sebas Night Runner en Unity
+                        en los primeros 30 días del inicio del proyecto. El videojuego fue desarrollado
+                        en el lenguaje de programación C# como un juego tipo runner 2D basado en romper
+                        una puntuación y conseguir monedas para así desbloquear diversos objetos como
+                        personajes o niveles. Realicé tanto la programación del videojuego como cada uno
+                        de los diseños y sprites utilizados en el mismo. El juego cuenta con una estética
+                        retro, por lo que se realizaron los diseños en 16 bits junto con un abanico de
+                        habilidades como doble salto.
+                    </p>
+                    <p>abril-mayo 2023</p>
+                </div>
+    
+                <div class="prof2">
+                    <h4>Publicidad y estrategias de marketing</h4>
+                    <p>Cree y desarrollé durante 4 meses un proyecto de Market Research para una empresa
+                        fotográfica llamada Feeka Photo. Durante la misma, analicé su mercado objetivo, realicé
+                        estudios de marketing a más de 100 personas en diversos rangos de edades para analizar
+                        la retención de la marca y la forma en la que se puede mejorar la relación con el consumidor.
+                        Se analizaron diversas formas de actualizar la página web para fabricar una experiencia
+                        accesible, amigable e interesante para el público tanto en navegadores web como dispositivos
+                        móviles, proponiendo formas en las que se podrían automatizar ciertas acciones para hacerlas
+                        menos repetitivas e intuitivas.
+                    </p>
+                    <p>noviembre 2022</p>
+                </div>
+                
+                <div class="prof3">
+                    <h4>Desarrollador</h4>
+                    <p>Cree y desarrollé durante 5 días un prototipo funcional a escala de un producto llamado
+                        SafeWalk que se coloca en los semáforos cercanos a cruces peatonales. El objetivo del
+                        proyecto fue reducir los accidentes en cruces peatonales debido al tiempo del mismo en
+                        ciudades con gran población. El proyecto fue realizado y clasificó para una competencia
+                        de prototipos con problemáticas en sectores similares. Se realizó a través de programación
+                        en Micro:bit con JavaScript.
+                    </p>
+                    <p>abril 2022</p>
+                </div>
             </div>
             
-            <div class="prof3">
-                <h4>Desarrollador</h4>
-                <p>Cree y desarrollé durante 5 días un prototipo funcional a escala de un producto llamado
-                    SafeWalk que se coloca en los semáforos cercanos a cruces peatonales. El objetivo del
-                    proyecto fue reducir los accidentes en cruces peatonales debido al tiempo del mismo en
-                    ciudades con gran población. El proyecto fue realizado y clasificó para una competencia
-                    de prototipos con problemáticas en sectores similares. Se realizó a través de programación
-                    en Micro:bit con JavaScript.
-                </p>
-                <p>abril 2022</p>
-            </div>
 
     </section>
     <section class="educacion" id="educacion">

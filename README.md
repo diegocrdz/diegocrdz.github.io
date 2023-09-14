@@ -1,4 +1,10 @@
-# diegocrdz.github.io
+# **¡Bienvenido a mi página oficial!**
+
+# **Welcome to my official Website!**
+
+## Click here to go to my Website :arrow_right: *[diegocrdz.github.io](https://diegocrdz.github.io/)*
+
+---
 
 ## Diego Córdova Rodríguez
 
@@ -6,14 +12,8 @@
 
 ---
 
-## **¡Bienvenido a mi página oficial!**
-## **Welcome to my official Website!**
-
----
-
 ### Información de contacto / Contact Info:
 
-	
 :boy: NOMBRE/NAME: **Diego Córdova Rodríguez**
 
 :email: CORREO/E-MAIL: **diegocordova.rdz@hotmail.com**

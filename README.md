@@ -13,6 +13,9 @@
 
 ### Información de contacto / Contact Info:
 
-NOMBRE/NAME: Diego Córdova Rodríguez
-CORREO/E-MAIL: diegocordova.rdz@hotmail.com
-TELÉFONO/PHONE NUMBER: 55 6677 5597
+	
+:boy: NOMBRE/NAME: **Diego Córdova Rodríguez**
+
+:email: CORREO/E-MAIL: **diegocordova.rdz@hotmail.com**
+
+:telephone_receiver: TELÉFONO/PHONE NUMBER: **55 6677 5597**

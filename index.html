@@ -1,216 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>Diego Córdova Rodríguez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="fondo" id="fondo">
-        <img src="images/fondo.jpg" alt="fondo">
-    </div>
 
-    <!-- Inicio -->
     <section class="inicio" id="inicio">
 
         <header>
-
-            <nav id="nav" class="nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#contacto">Contacto</a>
-                <a href="#profesional">Experiencia Profesional</a>
-                <a href="#educacion">Educacion</a>
-                <a href="#habilidades">Habilidades</a>
+            <nav>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#inicio">INICIO</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="#contacto">CONTACTO</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-file"></i>
+                        <a href="#experiencia">EXPERIENCIA PROFESIONAL</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-book"></i>
+                        <a href="#educacion">EDUCACIÓN</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-pen"></i>
+                        <a href="#habilidades">HABILIDADES</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-download"></i>
+                        <a href="documents/CV_DiegoCórdovaRodríguez.pdf" download>CV</a>
+                    </li>
+                </ul>
             </nav>
         </header>
-
-        <div class="contacto" id="contacto">
-
-            <div class="foto">
-
-                <img src="/images/me.jpeg" alt="me">
-
-            </div>
-            
-            <div class="texto-caja">
-                
-                <div class="texto">
-
-                    </div>
-
-                    <div class="nombre">
         
-                        <h1>Diego Córdova Rodríguez</h1>
-                        <h2>Trainee de Ingeniería en Tecnologías Computacionales</h2>
-                    
-                    </div>
-
-                    <div class="contacto" id="contacto">
-        
-                        <h3>Contacto</h3>
-                        
-                        <div class="correo">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span class="titulo-detalle">CORREO</span>
-                            <p>diegocordova.rdz@hotmail.com</p>
-                        </div>
-        
-                        <div class="telefono">
-                            <i class="fa-solid fa-phone"></i>
-                            <span class="titulo-detalle">TELÉFONO</span>
-                            <p>55 6677 5597</p>
-                        </div>
-        
-                        <div class="github">
-                            <i class="fa-brands fa-github"></i>
-                            <span class="titulo-detalle">GITHUB</span>
-                            <p>https://github.com/diegocrdz</p>
-                        </div>
-        
-                        <div class="linkedin">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span class="titulo-detalle">LINKEDIN</span>
-                            <p>www.linkedin.com/in/diego-córdova-rodríguez</p>
-                        </div>
-        
-                        <div class="sitioweb">
-                            <i class="fa-solid fa-link"></i>
-                            <span class="titulo-detalle">SITIO WEB</span>
-                            <p>https://diegocrdz.github.io/</p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <!-- Experiencia Profesional -->
-    <section class="profesional" id="profesional">
-        
-        <div class="contenido-seccion">
-
-            <h1>Experiencia Profesional</h1>
-
-            <div class="texto">
-                
-                <div class="prof1">
-                    <h4>Desarrollador</h4>
-                    <p>Cree y desarrollé un videojuego llamado Sebas Night Runner en Unity
-                        en los primeros 30 días del inicio del proyecto. El videojuego fue desarrollado
-                        en el lenguaje de programación C# como un juego tipo runner 2D basado en romper
-                        una puntuación y conseguir monedas para así desbloquear diversos objetos como
-                        personajes o niveles. Realicé tanto la programación del videojuego como cada uno
-                        de los diseños y sprites utilizados en el mismo. El juego cuenta con una estética
-                        retro, por lo que se realizaron los diseños en 16 bits junto con un abanico de
-                        habilidades como doble salto.
-                    </p>
-                    <p id="fecha">abril-mayo 2023</p>
-                </div>
+        <section class="imagen-fondo">
+            <img src="images/me.jpeg" alt="foto">
+            <ul>
+                <h1>Diego Córdova Rodríguez</h1>
+                <h2>Trainee de Ingeniería en Tecnologías Computacionales</h2>
+            </ul>
+        </section>
     
-                <div class="prof2">
-                    <h4>Publicidad y estrategias de marketing</h4>
-                    <p>Cree y desarrollé durante 4 meses un proyecto de Market Research para una empresa
-                        fotográfica llamada Feeka Photo. Durante la misma, analicé su mercado objetivo, realicé
-                        estudios de marketing a más de 100 personas en diversos rangos de edades para analizar
-                        la retención de la marca y la forma en la que se puede mejorar la relación con el consumidor.
-                        Se analizaron diversas formas de actualizar la página web para fabricar una experiencia
-                        accesible, amigable e interesante para el público tanto en navegadores web como dispositivos
-                        móviles, proponiendo formas en las que se podrían automatizar ciertas acciones para hacerlas
-                        menos repetitivas e intuitivas.
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    diegocordova.rdz@hotmail.com
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    55 66 77 55 97
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/diegocordovarodriguez/" target="_blank">Diego Córdova Rodríguez</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/diegocrdz" target="_blank">diegocrdz</a>
+                </li>
+            </ul>
+        </section>
+    
+        <section class="experiencia" id="experiencia">
+            <h2>Experiencia Profesional</h2>
+            <ul>
+                <li>
+                    <strong>Desarrollador</strong> - Tecnológico de Monterrey (Abril - Mayo 2023)
+                    <p>
+                        Cree y desarrollé un videojuego llamado Sebas Night Runner en Unity en los primeros 30 días del inicio del proyecto.
+                        El videojuego fue desarrollado en el lenguaje de programación C# como un juego tipo runner 2D basado en romper una
+                        puntuación y conseguir monedas para así desbloquear diversos objetos como personajes o niveles. Realicé tanto la
+                        programación del videojuego como cada uno de los diseños y sprites utilizados en el mismo. El juego cuenta con una
+                        estética retro, por lo que se realizaron los diseños en 16 bits junto con un abanico de habilidades como doble salto.
                     </p>
-                    <p id="fecha">noviembre 2022</p>
-                </div>
-                
-                <div class="prof3">
-                    <h4>Desarrollador</h4>
-                    <p>Cree y desarrollé durante 5 días un prototipo funcional a escala de un producto llamado
-                        SafeWalk que se coloca en los semáforos cercanos a cruces peatonales. El objetivo del
-                        proyecto fue reducir los accidentes en cruces peatonales debido al tiempo del mismo en
-                        ciudades con gran población. El proyecto fue realizado y clasificó para una competencia
-                        de prototipos con problemáticas en sectores similares. Se realizó a través de programación
-                        en Micro:bit con JavaScript.
+                    <div class="contenedor-media">
+                        <video width="320" height="240" controls>
+                            <source src="videos/SNR.mp4" type="video/mp4">
+                            Tu navegador no admite la reproducción de videos.
+                    </div>
+                </li>
+                <li>
+                    <strong>Publicidad y estrategias de Marketing</strong> - Tecnológico de Monterrey (Abril - Mayo 2023)
+                    <p>
+                        Cree y desarrollé durante 4 meses un proyecto de Market Research para una empresa fotográfica llamada Feeka Photo.
+                        Durante la misma, analicé su mercado objetivo, realicé estudios de marketing a más de 100 personas en diversos rangos de
+                        edades para analizar la retención de la marca y la forma en la que se puede mejorar la relación con el consumidor.
+                        Se analizaron diversas formas de actualizar la página web para fabricar una experiencia accesible, amigable e interesante
+                        para el público tanto en navegadores web como dispositivos móviles, proponiendo formas en las que se podrían automatizar
+                        ciertas acciones para hacerlas menos repetitivas e intuitivas.
                     </p>
-                    <p id="fecha">abril 2022</p>
-                </div>
-            </div>
-            
+
+                    <div class="contenedor-media">
+                        <a href="https://www.feekaphoto.com/" target="_blank">
+                            <img src="images/feeka.png" alt="feeka">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <strong>Desarrollador</strong> - Tecnológico de Monterrey (Abril 2022)
+                    <p>
+                        Cree y desarrollé durante 5 días un prototipo funcional a escala de un producto llamado SafeWalk que se coloca en los semáforos
+                        cercanos a cruces peatonales. El objetivo del proyecto fue reducir los accidentes en cruces peatonales debido al tiempo del mismo
+                        en ciudades con gran población. El proyecto fue realizado y clasificó para una competencia de prototipos con problemáticas en
+                        sectores similares. Se realizó a través de programación en Micro:bit con JavaScript.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    
+        <section class="educacion" id="educacion">
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <strong>Tecnológico de Monterrey</strong> - Ingeniería en Tecnologías Computacionales (2023 - 2027)
+                    <p></p>
+                    <strong>Beca de Talento Académico</strong>
+                    <p></p>
+                    <strong>Crusos Relevantes</strong>
+                    <p>
+                        Pensamiento Computacional Para Ingeniería, Modelación de la ingeniería y ciencias
+                    </p>
+                </li>
+                <li>
+                    <strong>Tecnológico de Monterrey</strong> - Bachillerato (2023-2027)
+                    <p></p>
+                    <strong>Beca de Talento Académico</strong>
+                    <p>
+                        Reconocimiento de excelencia con un promedio acumulado de 9.6 a lo largo de mis estudios de bachiller.
+                    </p>
+                    <strong>Crusos Relevantes</strong>
+                    <p>
+                        Creatividad y diseño digital, Diseño y desarrollo de aplicaciones, Expresión digital, Industria, procesos
+                        y manufactura, Pensamiento lógico computacional, Proyecto aplicado de diseño y tecnología (Creación de
+                        videojuegos en entornos como Unity), Proyecto de negocios y finanzas (Marketing orientado a marcas).
+                    </p>
+                </li>
+                <li>
+                    <strong>Proyecto de Servicio Becario</strong> - (Octubre 2023)
+                    <p>
+                        Cree y desarrollé una propuesta enfocada a la toma de apuntes dentro de las instituciones del Tecnológico de Monterrey
+                        con el fin de apoyar a los estudiantes a desempeñarse mejor en distintas áreas. Realicé una serie de encuestas a 50
+                        personas durante el transcurso de 4 meses para observar los resultado y aplicar diferentes métodos de toma de apuntes,
+                        como fueron los métodos Cornell, diagramas, abreviaturas, etc. Se observó que la implementación de estos métodos ayudó
+                        a los alumnos de semestres más avanzados a estudiar menos horas a la semana.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    
+        <section class="habilidades" id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>
+                    <strong>Programación</strong>
+                    <p>C#, Python</p>
+                </li>
+                <li>
+                    <strong>Idiomas</strong>
+                    <p>Inglés avanzado nivel C1 certificado por Pearson PEIC (Pearson English International Certificate, antes PTEG)</p>
+                </li>
+                <li>
+                    <strong>Computo</strong>
+                    <p>Unity, Adobe Photoshop, Adobe Premiere Pro</p>
+                </li>
+                <li>
+                    <strong>Responsabilidad</strong>
+                    <p>Soy una persona comprometida con mis actividades por hacer, buscando siempre tener el mejor resultado posible ante una situación.
+                        Ante tareas complicadas o de arduo trabajo, soy una persona de confiar para tener un resultado de excelente calidad, intuitivo y
+                        amigable para presentar.</p>
+                </li>
+                <li>
+                    <strong>Determinación</strong>
+                    <p>Una vez tengo un objetivo, trabajo de forma constante hasta conseguirlo, pues parte de mi personalidad y forma de trabajar es
+                        teniendo resultados con anticipación en caso de modificaciones futuras o imprevistos.</p>
+                </li>
+                <li>
+                    <strong>Comunicación</strong>
+                    <p>Tengo una mente abierta al trabajar en equipo, formando rápidamente soluciones ante retos que involucran colaboración entre 5 o
+                        más de 10 miembros. Puedo trabajar con personas con visión diferente a la mía, tomándolo como una oportunidad para obtener resultados innovadores.</p>
+                </li>
+                <li>
+                    <strong>Creatividad e innovación</strong>
+                    <p>Siempre busco que los proyectos en los que trabajo tengan una característica que los diferencie del resto. Ya sea por diseño, eficacia o accesibilidad,
+                        realizo los deberes de forma amigable, nueva e intuitiva.</p>
+                </li>
+                <li>
+                    <strong>Resiliencia</strong>
+                    <p>Soy capaz de adaptarme a nuevos cambios y situaciones. No importa el trabajo que se me asigne, soy capaz de superar los retos y trabajar en ellos de
+                        forma responsable.</p>
+                </li>
+            </ul>
+        </section>
 
     </section>
-    <section class="educacion" id="educacion">
-        
-        <div class="contenido-seccion">
 
-            <h1>Educación</h1>
-
-            <div class="edu1">
-                <h4>Tecnológico de Monterrey</h4>
-                <p>Ingeniería en Tecnologías Computacionales</p>
-                <p>Beca de Talento Académico</p>
-                <p>Cursos relevantes: Pensamiento Computacional Para Ingeniería, Modelación de la ingeniería y ciencias</p>
-                <p>Ciudad de México, México</p>
-                <p>agosto 2023 - junio 2027</p>
-            </div>
-
-            <div class="edu2">
-                <h4>Tecnológico de Monterrey</h4>
-                <p>Ingeniería en Tecnologías Computacionales</p>
-                <p>Beca de Talento Académico</p>
-                <p>Reconocimiento de excelencia con un promedio acumulado de 9.6 a lo largo de mis estudios de bachiller.</p>
-                <p>Cursos relevantes: Creatividad y diseño digital, Diseño y desarrollo de aplicaciones, Expresión digital,
-                    Industria, procesos y manufactura, Pensamiento lógico computacional, Proyecto aplicado de diseño y tecnología
-                    (Creación de videojuegos en entornos como Unity), Proyecto de negocios y finanzas (Marketing orientado a marcas).</p>
-                <p>Ciudad de México, México</p>
-                <p>agosto 2020 - junio 2023</p>
-            </div>
-            
-            <div class="edu3">
-                <h4>Proyecto de Servicio Becario</h4>
-                <p>
-                    Cree y desarrollé una propuesta enfocada a la toma de apuntes dentro de las instituciones del Tecnológico de Monterrey
-                    con el fin de apoyar a los estudiantes a desempeñarse mejor en distintas áreas. Realicé una serie de encuestas a 50
-                    personas durante el transcurso de 4 meses para observar los resultado y aplicar diferentes métodos de toma de apuntes,
-                    como fueron los métodos Cornell, diagramas, abreviaturas, etc. Se observó que la implementación de estos métodos ayudó
-                    a los alumnos de semestres más avanzados a estudiar menos horas a la semana.</p>
-                <p>Ciudad de México, México</p>
-                <p>octubre 2023</p>
-            </div>
-
-    </section>
-    <section class="habilidades" id="habilidades">
-
-        <div class="contenido-seccion">
-
-            <h1>Habilidades</h1>
-
-            <div class="principales">
-                <p>Programación: C#, Python</p>
-                <p>Idiomas: Inglés Avanzado nivel C1</p>
-                <p>Programas de cómputo: Adobe Photoshop, Adobe Premiere Pro, Unity </p>
-            </div>
-
-            <div class="caracteristicas">
-                <p>Responsabilidad: Soy una persona comprometida con mis actividades por hacer,
-                    buscando siempre tener el mejor resultado posible ante una situación. Ante
-                    tareas complicadas o de arduo trabajo, soy una persona de confiar para tener
-                    un resultado de excelente calidad, intuitivo y amigable para presentar.</p>
-
-                <p>Determinación: Una vez tengo un objetivo, trabajo de forma constante hasta conseguirlo,
-                    pues parte de mi personalidad y forma de trabajar es teniendo resultados con anticipación
-                    en caso de modificaciones futuras o imprevistos.</p>
-
-                <p>Comunicación: Tengo una mente abierta al trabajar en equipo, formando rápidamente soluciones
-                    ante retos que involucran colaboración entre 5 o más de 10 miembros. Puedo trabajar con personas
-                    con visión diferente a la mía, tomándolo como una oportunidad para obtener resultados innovadores.</p>
-
-                <p>Creatividad e innovación: Siempre busco que los proyectos en los que trabajo tengan una característica
-                    que los diferencie del resto. Ya sea por diseño, eficacia o accesibilidad, realizo los deberes de forma
-                    amigable, nueva e intuitiva.</p>
-                
-                <p>Resiliencia: Soy capaz de adaptarme a nuevos cambios y situaciones. No importa el trabajo que se me asigne,
-                    soy capaz de superar los retos y trabajar en ellos de forma responsable.</p>
-
-            </div>
-
-    </section>
 </body>
 </html>

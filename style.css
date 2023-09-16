@@ -1,248 +1,179 @@
+/* Estilos generales */
 html
 {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    scroll-behavior:smooth;
-    background-color: #3f3f3f;
+    background-color: #454545;
+    color: #fff;
+    scroll-behavior: smooth;
 }
 
-body
-{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1,h2,p
-{
+.inicio{
     margin: 0;
     padding: 0;
 }
 
-/*EL FONDO DEL INICIO*/
-.fondo
-{
-    background-image: url(images/fondo.jpg);
+/* Encabezado */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 99;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Imagen de fondo */
+.imagen-fondo {
+    background-image: url('images/grad.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: absolute; /* Fija el fondo en su lugar */
-    top: 0;
-    left: 0;
-    z-index: -1; /* Coloca el fondo detrás de todo el contenido */
+    text-align: center;
+    color: #fff;
+    padding: 300px 0;
 }
-.fondo img
-{
-    width: 80%;
+.imagen-fondo img {
+    transition: 0.5s;
+    position: relative;
+    z-index: 98;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    border: 20px solid #819DE3;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+}
+.imagen-fondo ul {
+    transition: 0.5s;
+    margin: 0 30%;
+    height: auto;
+    padding: 50px;
+    background-color: #454545;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+}
+
+.imagen-fondo ul h1, h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Secciones */
+section {
+    padding: 40px;
+}
+
+/* Estilos específicos para secciones */
+.imagen-fondo ul h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.imagen-fondo ul h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #9DFAD6;
+}
+
+.experiencia ul li .contenedor-media {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: auto;
+}
+.experiencia ul li .contenedor-media video {
+    width: 60%;
+    height: auto;
+}
+.experiencia ul li .contenedor-media img {
+    width: 60%;
     height: auto;
 }
 
-.inicio
-{
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo con 50% de opacidad */
-    padding: 100px;
+.contacto h2,
+.experiencia h2,
+.educacion h2,
+.habilidades h2 {
+    color: #9DFAD6;
+    font-size: 24px;
 }
 
-/*HEADER*/
+.contacto ul,
+.experiencia ul,
+.educacion ul,
+.habilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-.inicio header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    height: 60px;
-    background-color: #202020;
-    white-space: nowrap;
-    text-align: center;
-    z-index: 999;
-    display: flex;
-    justify-content: left; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
-    transition: 0.5s;
+.contacto li,
+.experiencia li,
+.educacion li,
+.habilidades li {
+    margin-bottom: 50px;
 }
-.inicio header:hover
-{
-    transition: 0.5s;
-    background-color: black;
-    box-shadow: black 0 0 20px;
-}
-.inicio header .nav a
-{
-    padding-left: 40px;
+
+.contacto a,
+.habilidades a {
     text-decoration: none;
-    color: grey;
-    font-size: 100%;
-    transition: 0.5s;
+    color: #819DE3;
 }
-.inicio header .nav a:hover
-{
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-}
-@media (max-width: 600px)
-{
-    .inicio header .nav a
-    {
-        font-size:50%;
+
+/* Estilos para ventanas pequeñas */
+@media screen and (max-width: 768px) {
+    .imagen-fondo ul {
+        margin: 0 10%;
+    }
+    .imagen-fondo img {
+        width: 50%;
+    }
+    .experiencia ul li .contenedor-video-snr video {
+        width: 100%;
+        height: auto;
     }
 }
 
-/*CONTACTO*/
-
-.inicio .contacto .texto-caja
-{
-    transition: 0.5s;
-    width: 70%; /* Ancho del objeto en relación al ancho de la ventana */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 50px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 50px black;
-    background-color: #3f3f3f;
-}
-.inicio .contacto .texto-caja:hover
-{
-    transition: 0.5s;
-    transform: scale(1.01);
-}
-.inicio .contacto .texto-caja .texto
-{
-    font-size: 10%; /* Tamaño de fuente relativo */
+/* Estilos para hover */
+header nav ul li a:hover {
+    color: #9DFAD6;
 }
 
-/*FOTO*/
-
-.inicio .contacto .foto img
-{
-    max-width: 100%;
-    max-height: 100%;
-    transition: 0.5s;
-    border: 10px white solid;
-    border-radius: 10%;
-    box-shadow: 0 0 100px black;
-
-    margin-left: auto;
-    margin-right: auto;
+.contacto a:hover,
+.habilidades a:hover {
+    text-decoration: underline;
 }
-.inicio .contacto .foto img:hover
-{
+
+.imagen-fondo ul:hover {
     transition: 0.5s;
-    border: 10px #3f3f3f solid;
+    transform: scale(1.05);
+}
+
+.imagen-fondo img:hover {
+    transition: 0.5s;
+    border: 20px solid white;
     border-radius: 40%;
-    box-shadow: 0 0 100px white;
+    box-shadow: 0 0 20px black;
 }
 
-/*Sección profesional*/
-
-.profesional
-{
-    padding-bottom: 100px;
-}
-.profesional .contenido-seccion h1
-{
+.experiencia ul li .contenedor-media img:hover {
     transition: 0.5s;
-    margin: auto;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 200%;
-    font-weight: bolder;
-    background-color: black;
-    padding: 50px;
-}
-.profesional .contenido-seccion h1:hover
-{
-    transition: 0.5s;
-    transform: scale(1.01);
-    background-color: #3f3f3f;
-    box-shadow: black 0 0 20px;
-}
-
-.profesional .contenido-seccion h4
-{
-    font-size: 100%;
-    font-weight: bold;
-    text-align: center;
-}
-.profesional .contenido-seccion p
-{
-    font-size: 100%;
-    text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-/*Sección educación*/
-
-.educacion
-{
-    padding-bottom: 100px;
-} 
-.educacion .contenido-seccion h1
-{
-    transition: 0.5s;
-    margin: auto;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 200%;
-    font-weight: bolder;
-    background-color: black;
-    padding: 50px;
-}
-.educacion .contenido-seccion h1:hover
-{
-    transition: 0.5s;
-    transform: scale(1.01);
-    background-color: #3f3f3f;
-    box-shadow: black 0 0 20px;
-}
-
-.educacion .contenido-seccion h4
-{
-    font-size: 100%;
-    padding:50px;
-    font-weight: bold;
-    text-align: center;
-}
-.educacion .contenido-seccion p
-{
-    font-size: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-/*Sección habilidades*/
-
-.habilidades
-{
-    transition: 0.5s;
-    padding: 50px 50px 50px;
-    margin-bottom: 200px;
-    margin-left: 0%;
-    margin-right: 0%;
-    border-radius: 50px;
-    box-shadow: 0 0 300px black;
-}
-.habilidades:hover
-{
-    transition: 0.5s;
-    transform: scale(1.01);
-}
-.habilidades .contenido-seccion h1
-{
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    padding: 0 20px;
-}
-.habilidades .contenido-seccion
-{
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-    padding: 0 20px;
+    opacity: 50%;
 }

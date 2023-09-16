@@ -49,7 +49,7 @@ nav a {
     background-size: cover;
     text-align: center;
     color: #fff;
-    padding: 300px 0;
+    padding: 150px 0;
 }
 .imagen-fondo img {
     transition: 0.5s;
@@ -58,7 +58,7 @@ nav a {
     margin: 0 auto;
     width: 20%;
     height: auto;
-    border: 20px solid #819DE3;
+    border: 10px solid black;
     border-radius: 50%;
     box-shadow: 0 0 20px black;
 }
@@ -79,7 +79,7 @@ nav a {
 
 /* Secciones */
 section {
-    padding: 40px;
+    padding: 0;
 }
 
 /* Estilos específicos para secciones */
@@ -112,8 +112,12 @@ section {
 .experiencia h2,
 .educacion h2,
 .habilidades h2 {
+    padding: 0;
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
     color: #9DFAD6;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .contacto ul,
@@ -121,7 +125,7 @@ section {
 .educacion ul,
 .habilidades ul {
     list-style-type: none;
-    padding: 0;
+    padding: 40px;
 }
 
 .contacto li,
@@ -145,15 +149,33 @@ section {
     .imagen-fondo img {
         width: 50%;
     }
-    .experiencia ul li .contenedor-video-snr video {
+    .experiencia ul li .contenedor-media video {
         width: 100%;
         height: auto;
+    }
+    .experiencia ul li .contenedor-media img {
+        width: 100%;
+        height: auto;
+    }
+    header nav ul li {
+        display:inline-block;
+        font-size: 10px;
+        padding: 2px 0;
     }
 }
 
 /* Estilos para hover */
 header nav ul li a:hover {
     color: #9DFAD6;
+}
+
+.contacto h2:hover,
+.educacion h2:hover,
+.experiencia h2:hover,
+.habilidades h2:hover {
+    transition: 0.5s;
+    background-color: #727272;
+    color: white;
 }
 
 .contacto a:hover,
@@ -168,7 +190,7 @@ header nav ul li a:hover {
 
 .imagen-fondo img:hover {
     transition: 0.5s;
-    border: 20px solid white;
+    border: 10px solid white;
     border-radius: 40%;
     box-shadow: 0 0 20px black;
 }
@@ -176,4 +198,23 @@ header nav ul li a:hover {
 .experiencia ul li .contenedor-media img:hover {
     transition: 0.5s;
     opacity: 50%;
+}
+
+footer a:hover {
+    transition: 0.5s;
+    color: #9DFAD6;
+}
+
+/* Volver al Inicio */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
 }

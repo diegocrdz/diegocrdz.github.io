@@ -26,11 +26,11 @@ header {
     text-align: left;
     padding: 20px 0;
     z-index: 99;
+}
 #descargar-cv{
     margin-left: auto;
     border: 2px solid black;
     padding: 5px;
-}
 }
 nav ul {
     list-style-type: none;
@@ -57,7 +57,6 @@ nav a {
     padding: 100px 0;
 }
 .imagen-fondo img {
-    transition: 0.5s;
     position: relative;
     z-index: 98;
     margin: 0 auto;
@@ -67,7 +66,6 @@ nav a {
     border-radius: 50%;
 }
 .imagen-fondo ul {
-    transition: 0.5s;
     margin: 0 30%;
     height: auto;
     padding: 50px;

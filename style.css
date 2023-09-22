@@ -95,18 +95,11 @@ nav ul li a{
     font-size: 40px;
     font-weight: bolder;
 }
-.flecha-abajo{
+.perfil p{
     color: black;
-    font-style: italic;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 20px;
     font-weight: bolder;
-}
-
-.inicio i{
-    color: black;
-    font-size: 30px;
-    margin-bottom: 20px;
 }
 
 /* Seccion Contacto */

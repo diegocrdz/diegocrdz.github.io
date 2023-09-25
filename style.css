@@ -1,6 +1,6 @@
 /* Página */
 html{
-    background-color: white;
+    background-color: #f0f0f0;
     color: black;
     scroll-behavior: smooth;
 }
@@ -13,7 +13,8 @@ body{
 
 /* Secciones */
 section{
-    padding: 0;
+    padding: 0 150px;
+    margin: 0;
 }
 
 /* Encabezado */
@@ -25,13 +26,14 @@ header{
     background-color: #f0f0f0;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     padding: 20px 0;
     z-index: 99;
 }
 .titulo{
     margin-left: 20px;
+    margin-right: 20px;
     font-size: 30px;
     color: black;
     padding: 5px;
@@ -51,12 +53,16 @@ nav ul li{
 nav ul li:first-child{
     margin-left: 0;
 }
+nav ul li:last-child{
+    margin-right: 0;
+}
 nav ul li a{
     font-weight: bolder;
     text-decoration: none;
     color: #454545;
 }
 .btn-descargarcv{
+    margin-left: auto;
     margin-right: 20px;
     color: black;
     padding: 5px;
@@ -110,10 +116,9 @@ nav ul li a{
 .contacto h2{
     text-align: center;
     padding: 20px 0;
-    background-color: black;
     color: white;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 50px;
 }
 .contacto .contenido-contacto ul li i{
     color: white;
@@ -122,6 +127,7 @@ nav ul li a{
     color: white;
 }
 
+/* Seccion Experiencia */
 .experiencia ul li .contenedor-media {
     display: flex;
     justify-content: left;
@@ -142,10 +148,9 @@ nav ul li a{
 .habilidades h2 {
     text-align: center;
     padding: 20px 0;
-    background-color: white;
     color: black;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .contacto ul,
@@ -170,6 +175,9 @@ nav ul li a{
 
 /* Estilos para ventanas pequeñas */
 @media screen and (max-width: 1024px) {
+    section{
+        padding: 0 20px;
+    }
     .experiencia ul li .contenedor-media video {
         width: 100%;
         height: auto;

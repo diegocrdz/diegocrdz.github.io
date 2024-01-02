@@ -46,57 +46,69 @@ header
     padding: 20px 20px;
     z-index: 99;
 }
-.titulo
+header .titulo
 {
     font-size: 30px;
-    color: white;
+    font-weight: bold;
     text-decoration: none;
-    font-weight: bolder;
-}
-nav ul
-{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-nav ul li
-{
-    margin-right: 20px;
     margin-left: 20px;
-}
-nav ul li a
-{
-    font-weight: bolder;
-    text-decoration: none;
     color: white;
-    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
 }
-nav ul li a:hover
+header nav
 {
-    background-color: #3a3a3a;
-    padding: 5px;
-    border-radius: 10px;
-    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
+    margin-right: auto;
+}
+header nav ul
+{
+    display: flex;
+    user-select: none;
+}
+header nav ul li
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
 }
 
-.btn-descargarcv
+header nav ul li a
 {
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    padding: 5px;
-    border: 2px solid white;
-    border-radius: 5px;
+    color: #c2c2c2;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.5s;
 }
+header nav ul li a:hover
+{
+    color: #fff;
+    text-decoration: underline;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+
+header .btn-descargarcv
+{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 50px; /* Adjust the margin-right value as needed */
+    font-weight: bold;
+    transition: 0.5s;
+}
+header .btn-descargarcv:hover
+{
+    background-color: #fff;
+    color: #313131;
+}
+
 .menu-toggle
 {
     display: none;
 }
 
-/* Seccion Inicio */
+/* Initial section */
 
 .inicio
 {
@@ -142,9 +154,9 @@ nav ul li a:hover
     color: white;
     padding: 20px 0;
     text-align: center;
-    margin: 0 20rem;
+    margin: 0 30%;
     margin-bottom: 5rem;
-    border: 2px; /* Add border */
+    border: solid rgb(99, 99, 99) 5px; /* Add border */
     border-radius: 20px; /* Rounded borders */
     box-shadow: 0 0 50px black; /* Add shadow */
 }
@@ -188,44 +200,75 @@ nav ul li a:hover
 }
 
 /* Estilos para ventanas pequeñas */
-@media screen and (max-width: 1024px) {
-    section{
+@media screen and (max-width: 1024px)
+{
+    section
+    {
         padding: 0 20px;
     }
-    .experiencia ul li .contenedor-media video {
+    .contacto
+    {
+        margin: 0 10% 5rem 10%;
+    }
+    .experiencia ul li .contenedor-media video
+    {
         width: 100%;
         height: auto;
     }
-    .experiencia ul li .contenedor-media img {
+    .experiencia ul li .contenedor-media img
+    {
         width: 100%;
         height: auto;
     }
-    .menu-toggle{
-        color: black;
+    .menu-toggle
+    {
+        color: white;
         display: block;
         cursor: pointer;
         font-size: 25px;
         padding: 10px;
         margin-left: 20px;
+        user-select: none; /* Prevent text selection */
     }
-    nav ul{
+    
+    header nav ul
+    {
         display: none;
         flex-direction: column;
-        background-color: #f0f0f0;
+        background-color: #313131;
         border-radius: 20px;
-        padding: 20px 0;
+        padding: 20px 0 20px 25px;
         position: absolute;
         top: 40px;
         left: 0;
         z-index: -1;
+        animation: dropUp 0.2s ease-in-out;
     }
-    nav ul.active{
+    @keyframes dropDown
+    {
+        0%
+        {
+            transform: translateY(-10%);
+            opacity: 0;
+        }
+        100%
+        {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    header nav ul.active {
         display: flex;
+        animation: dropDown 0.2s ease-in-out;
     }
-    nav ul li{
+    
+    nav ul li
+    {
         padding: 10px 10px;
     }
-    .titulo{
+    .titulo
+    {
         display: none;
     }
 }

@@ -1,0 +1,155 @@
+/* HTML */
+
+html
+{
+    background-color: #202020;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #202020;
+    font-family: 'Space mono', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section
+{
+    padding: 0 150px;
+    margin: 0;
+}
+
+/* Header */
+
+header
+{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start; /* Center contents to the left */
+    align-items: center; /* Center contents vertically */
+    padding: 20px 20px;
+    z-index: 99;
+}
+header .titulo
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+}
+header nav
+{
+    margin-right: auto;
+}
+header nav ul
+{
+    display: flex;
+    user-select: none;
+}
+header nav ul li
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+header nav ul li a
+{
+    color: #c2c2c2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+header nav ul li a:hover
+{
+    color: #fff;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+
+header .btn-descargarcv
+{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 50px; /* Adjust the margin-right value as needed */
+    font-weight: bold;
+    transition: 0.5s;
+}
+header .btn-descargarcv:hover
+{
+    background-color: #fff;
+    color: #313131;
+}
+
+.menu-toggle
+{
+    display: none;
+}
+
+/* Back button */
+
+.back-button a
+{
+    position: fixed;
+    top: 100px;
+    left: 40px;
+    background-color: #5a5a5a;
+    color: #fff;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* Title section */
+
+.title
+{
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(255, 157, 230);
+    font-weight: bolder;
+    font-size: 30px;
+}
+.title img
+{
+    width: 30%;
+    height: auto;
+}
+
+/* Introduction section */
+
+.introduction
+{
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+

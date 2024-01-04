@@ -15,6 +15,12 @@ body
     padding: 0;
 }
 
+section
+{
+    padding: 0 150px;
+    margin: 0;
+}
+
 h2
 {
     margin-top: 0;
@@ -24,18 +30,12 @@ h2
     font-size: 50px;
 }
 
-/* Sections */
-
-section
-{
-    padding: 0 150px;
-    margin: 0;
-}
-
 /* Header */
 
 header
 {
+    top: 0;
+    left: 0;
     position: fixed;
     width: 100%;
     background-color: transparent;
@@ -80,7 +80,6 @@ header nav ul li a
 header nav ul li a:hover
 {
     color: #fff;
-    text-decoration: underline;
     background-color: #5a5a5a;
     border-radius: 10px;
 }
@@ -112,38 +111,39 @@ header .btn-descargarcv:hover
 
 .inicio
 {
-    height: 98vh; /* Establece la altura al 100% del viewport */
-    background-color: #202020;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.perfil
-{
-    border-radius: 10px;
-    padding: 50px;
-    text-align: center;
-    margin: auto;
-}
-.perfil img
+.inicio img
 {
     width: 250px;
     height: auto;
     border-radius: 50%;
 }
-.perfil h1{
+.inicio h1
+{
     color: white;
     margin-top: 10px;
     font-size: 40px;
     font-weight: bolder;
+    text-align: center;
 }
-.perfil p{
+.inicio p
+{
     color: white;
     margin-top: 10px;
     font-size: 20px;
     font-weight: bolder;
+    text-align: center;
+}
+.inicio span
+{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
 }
 
 /* Contact section */
@@ -155,13 +155,17 @@ header .btn-descargarcv:hover
     padding: 20px 0;
     text-align: center;
     margin: 0 30%;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     border: solid rgb(99, 99, 99) 5px; /* Add border */
     border-radius: 20px; /* Rounded borders */
     box-shadow: 0 0 50px black; /* Add shadow */
 }
-.contacto .contenido-contacto ul li i{color: white;}
-.contacto .contenido-contacto ul li a{color: white;}
+.contacto .contenido-contacto ul li {
+    color: white;
+}
+.contacto .contenido-contacto ul li a {
+    color: white;
+}
 
 /* Experience Section */
 
@@ -182,30 +186,29 @@ header .btn-descargarcv:hover
     width: 60%;
     height: auto;
 }
-
-/* Others */
-
-.contacto ul,
-.experiencia ul,
-.educacion ul,
-.habilidades ul
+.experiencia .btn-snr
 {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contacto li,
-.experiencia li,
-.educacion li,
-.habilidades li
-{
-    margin-bottom: 50px;
-}
-
-.contacto a,
-.habilidades a
-{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
     text-decoration: none;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.experiencia .btn-snr:hover
+{
+    background-color: #fff;
+    color: #313131;
+}
+.experiencia ul li .contenedor-media img:hover
+{
+    transition: 0.5s;
+    opacity: 50%;
 }
 
 /* Abilities section */
@@ -240,9 +243,26 @@ header .btn-descargarcv:hover
     {
         padding: 0 20px;
     }
+
+    .inicio img
+    {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+    .inicio h1
+    {
+        font-size: 30px;
+    }
+    .inicio p
+    {
+        font-size: 15px;
+    }
+
     .contacto
     {
         margin: 0 10% 5rem 10%;
+        text-size-adjust: auto;
     }
     .experiencia ul li .contenedor-media video
     {
@@ -321,21 +341,33 @@ header .btn-descargarcv:hover
     }
 }
 
-/* Estilos para hover */
+/* Others */
+
+.contacto ul,
+.experiencia ul,
+.educacion ul,
+.habilidades ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacto li,
+.experiencia li,
+.educacion li,
+.habilidades li
+{
+    margin-bottom: 50px;
+}
+
+.contacto a,
+.habilidades a
+{
+    text-decoration: none;
+}
 
 .contacto a:hover,
 .habilidades a:hover
-{
-    text-decoration: underline;
-}
-
-.experiencia ul li .contenedor-media img:hover
-{
-    transition: 0.5s;
-    opacity: 50%;
-}
-
-footer a:hover
 {
     text-decoration: underline;
 }
@@ -348,9 +380,18 @@ footer
     background-color: #313131;
     color: #fff;
 }
-footer a{
+footer a
+{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
+    transition: 0.1s;
+}
+footer a:hover
+{
+    color: #fff;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    transition: 0.1s;
 }

@@ -38,7 +38,7 @@ header
 {
     position: fixed;
     width: 100%;
-    background-color: #313131;
+    background-color: transparent;
     color: #fff;
     display: flex;
     justify-content: flex-start; /* Center contents to the left */
@@ -163,43 +163,77 @@ header .btn-descargarcv:hover
 .contacto .contenido-contacto ul li i{color: white;}
 .contacto .contenido-contacto ul li a{color: white;}
 
-/* Seccion Experiencia */
-.experiencia ul li .contenedor-media {
+/* Experience Section */
+
+.experiencia ul li .contenedor-media
+{
     display: flex;
     justify-content: left;
     align-items: center;
     height: auto;
 }
-.experiencia ul li .contenedor-media video {
+.experiencia ul li .contenedor-media video
+{
     width: 60%;
     height: auto;
 }
-.experiencia ul li .contenedor-media img {
+.experiencia ul li .contenedor-media img
+{
     width: 60%;
     height: auto;
 }
 
+/* Others */
+
 .contacto ul,
 .experiencia ul,
 .educacion ul,
-.habilidades ul {
+.habilidades ul
+{
     list-style-type: none;
-    padding: 40px;
+    padding: 0;
 }
 
 .contacto li,
 .experiencia li,
 .educacion li,
-.habilidades li {
+.habilidades li
+{
     margin-bottom: 50px;
 }
 
 .contacto a,
-.habilidades a {
+.habilidades a
+{
     text-decoration: none;
 }
 
-/* Estilos para ventanas pequeñas */
+/* Abilities section */
+
+.habilidades ul
+{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
+}
+
+.habilidades ul li
+{
+    background-color: #202020;
+    color: white;
+    margin: 0 10%;
+    padding: 20px;
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Set flex direction */
+    align-items: center; /* Center vertically */
+    margin-bottom: 15%;
+    border: solid rgb(99, 99, 99) 5px; /* Add border */
+    border-radius: 20px; /* Rounded borders */
+    box-shadow: 0 0 50px black; /* Add shadow */
+}
+
+/* For different screen sizes */
+
 @media screen and (max-width: 1024px)
 {
     section
@@ -271,21 +305,38 @@ header .btn-descargarcv:hover
     {
         display: none;
     }
+
+    .habilidades ul
+    {
+        padding: 0;
+        margin: 0;
+        display:block;
+        grid-template-columns: auto;
+        column-gap: 5px; /* Reduce the gap between columns */
+        row-gap: 5px; /* Reduce the gap between rows */
+    }
+    .habilidades ul li
+    {
+        margin-bottom: 5%;
+    }
 }
 
 /* Estilos para hover */
 
 .contacto a:hover,
-.habilidades a:hover {
+.habilidades a:hover
+{
     text-decoration: underline;
 }
 
-.experiencia ul li .contenedor-media img:hover{
+.experiencia ul li .contenedor-media img:hover
+{
     transition: 0.5s;
     opacity: 50%;
 }
 
-footer a:hover{
+footer a:hover
+{
     text-decoration: underline;
 }
 

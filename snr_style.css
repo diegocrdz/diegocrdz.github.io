@@ -29,7 +29,7 @@ header
     left: 0;
     position: fixed;
     width: 100%;
-    background-color: transparent;
+    background-color: #313131;
     color: #fff;
     display: flex;
     justify-content: flex-start; /* Center contents to the left */
@@ -83,7 +83,7 @@ header .btn-descargarcv
     padding: 5px;
     text-decoration: none;
     margin-left: auto;
-    margin-right: 50px; /* Adjust the margin-right value as needed */
+    margin-right: 50px;
     font-weight: bold;
     transition: 0.5s;
 }
@@ -103,7 +103,7 @@ header .btn-descargarcv:hover
 .back-button a
 {
     position: fixed;
-    top: 100px;
+    top: 120px;
     left: 40px;
     background-color: #5a5a5a;
     color: #fff;
@@ -130,19 +130,31 @@ header .btn-descargarcv:hover
     flex-direction: column;
     color: rgb(255, 157, 230);
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 20px; /* Adjust the value as needed */
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        font-size: 10px;
+    }
 }
 .title img
 {
-    width: 30%;
+    width: 50%;
     height: auto;
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        width: 80%;
+    }
 }
 
 /* Introduction section */
 
 .introduction
 {
-    margin: 0 10%;
+    margin: 0 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,5 +163,135 @@ header .btn-descargarcv:hover
     color: white;
     font-weight: bolder;
     font-size: 30px;
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        font-size: 20px;
+    }
 }
 
+.play-button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10vh 50vh 25vh 50vh;
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        
+        margin: 20vh 20vh 25vh 20vh;
+    }
+}
+
+.play-button a
+{
+    color: #ff8bef;
+    background-color: #7337ff;
+    border: 15px solid black;
+    border-radius: 80px;
+    padding: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 1s;
+}
+.play-button a:hover
+{
+    color: #4c00ff;
+    background-color: #ff62ea;
+    transition: 0.5s;
+}
+
+.play-button p
+{
+    color: #a7a7a7;
+}
+
+@media screen and (max-width: 1024px)
+{
+    section
+    {
+        padding: 0 20px;
+    }
+    .menu-toggle
+    {
+        color: white;
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        padding: 10px;
+        margin-left: 20px;
+        user-select: none; /* Prevent text selection */
+    }
+    header nav ul
+    {
+        display: none;
+        flex-direction: column;
+        background-color: #313131;
+        border-radius: 20px;
+        padding: 20px 0 20px 25px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: -1;
+        animation: dropUp 0.2s ease-in-out;
+    }
+    @keyframes dropDown
+    {
+        0%
+        {
+            transform: translateY(-10%);
+            opacity: 0;
+        }
+        100%
+        {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    header nav ul.active {
+        display: flex;
+        animation: dropDown 0.2s ease-in-out;
+    }
+    nav ul li
+    {
+        padding: 10px 10px;
+    }
+    .titulo
+    {
+        display: none;
+    }
+    .introduction
+    {
+        margin: 0 10%;
+    }
+}
+
+/* Footer */
+footer
+{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #313131;
+    color: #fff;
+}
+footer a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.1s;
+}
+footer a:hover
+{
+    color: #fff;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    transition: 0.1s;
+}

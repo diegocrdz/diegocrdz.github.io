@@ -1,28 +1,23 @@
 /* HTML */
-
-html
-{
+html {
     background-color: #202020;
     color: white;
     scroll-behavior: smooth;
 }
 
-body
-{
+body {
     background-color: #202020;
     font-family: 'Space mono', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-section
-{
+section {
     padding: 0 150px;
     margin: 0;
 }
 
-h2
-{
+h2 {
     margin-top: 0;
     text-align: center;
     color: white;
@@ -32,8 +27,7 @@ h2
 
 /* Header */
 
-header
-{
+header {
     top: 0;
     left: 0;
     position: fixed;
@@ -41,130 +35,142 @@ header
     background-color: transparent;
     color: #fff;
     display: flex;
-    justify-content: flex-start; /* Center contents to the left */
-    align-items: center; /* Center contents vertically */
+    justify-content: flex-start;
+    align-items: center;
     padding: 20px 20px;
     z-index: 99;
 }
-header .titulo
-{
+
+header .titulo {
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
     margin-left: 20px;
     color: white;
 }
-header nav
-{
+
+header nav {
     margin-right: auto;
 }
-header nav ul
-{
+
+header nav ul {
     display: flex;
     user-select: none;
 }
-header nav ul li
-{
-    margin-left: 10px;
-    margin-right: 10px;
+
+header nav ul li {
+    margin: 0 10px;
     list-style: none;
 }
 
-header nav ul li a
-{
+header nav ul li a {
     color: #c2c2c2;
     text-decoration: none;
     font-weight: bold;
     transition: 0.5s;
 }
-header nav ul li a:hover
-{
+
+header nav ul li a:hover {
     color: #fff;
     background-color: #5a5a5a;
     border-radius: 10px;
 }
 
-header .btn-descargarcv
-{
+header .btn-descargarcv {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 5px;
     text-decoration: none;
     margin-left: auto;
-    margin-right: 50px; /* Adjust the margin-right value as needed */
+    margin-right: 50px;
     font-weight: bold;
     transition: 0.5s;
 }
-header .btn-descargarcv:hover
-{
+
+header .btn-descargarcv:hover {
     background-color: #fff;
     color: #313131;
 }
 
-.menu-toggle
-{
+.menu-toggle {
     display: none;
 }
 
 /* Initial section */
 
-.inicio
-{
+.inicio {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.inicio img
-{
-    width: 250px;
+.inicio .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.inicio .container .content {
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    a {
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: #fff;
+            color: #313131;
+            transition: 0.2s;
+        }
+    }
+}
+.inicio .container .image {
+    margin-right: 50px;
+}
+.inicio img {
+    width: 300px;
     height: auto;
     border-radius: 50%;
 }
-.inicio h1
-{
-    color: white;
-    margin-top: 10px;
-    font-size: 40px;
-    font-weight: bolder;
-    text-align: center;
-}
-.inicio p
-{
-    color: white;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-}
-.inicio span
-{
-    color: #fff;
-    font-size: 50px;
-    text-align: center;
-}
 
-/* Contact section */
+/* About me section */
 
-.contacto
-{
-    background-color: #202020;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin: 0 30%;
-    margin-bottom: 10rem;
-    border: solid rgb(99, 99, 99) 5px; /* Add border */
-    border-radius: 20px; /* Rounded borders */
-    box-shadow: 0 0 50px black; /* Add shadow */
-}
-.contacto .contenido-contacto ul li {
-    color: white;
-}
-.contacto .contenido-contacto ul li a {
-    color: white;
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    background-image: url("images/Sky.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the opacity here */
+
+    h2 {
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 50px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 20px;
+    }
 }
 
 /* Experience Section */
@@ -244,25 +250,25 @@ header .btn-descargarcv:hover
         padding: 0 20px;
     }
 
-    .inicio img
+    .inicio
     {
-        width: 200px;
-        height: auto;
-        border-radius: 50%;
-    }
-    .inicio h1
-    {
-        font-size: 30px;
-    }
-    .inicio p
-    {
-        font-size: 15px;
-    }
+        .container {
+            flex-direction: column;
 
-    .contacto
-    {
-        margin: 0 10% 5rem 10%;
-        text-size-adjust: auto;
+            .content {
+                h1 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .image img {
+                width: 200px;
+                height: auto;
+            }
+        }
     }
     .experiencia ul li .contenedor-media video
     {

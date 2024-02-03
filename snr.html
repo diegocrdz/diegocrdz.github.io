@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto: Sebas Night Runner</title>
 
+    <link rel="icon" href="images/Sebaslogo.png">
+
     <link rel="stylesheet" href="snr_style.css">
     <script src="script.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <header class="header">
-        <div class="menu-toggle">☰</div>
-        <a href="/" class="titulo" onclick="location.href='/'">DCR</a>
+        <div class="menu-toggle"><span class="material-symbols-outlined">density_medium</span></div>
+        <a href="/" class="logo" onclick="location.href='/'">DCR</a>
         <nav>
             <ul>
                 <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-                <li><a href="index.html#experiencia">Experiencia Profesional</a></li>
+                <li><a href="index.html#experiencia">Experiencia</a></li>
                 <li><a href="index.html#educacion">Educación</a></li>
                 <li><a href="index.html#habilidades">Habilidades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <a href="documents/CV_DiegoCórdovaRodríguez.pdf" class="btn-descargarcv" download>Descargar CV <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="documents/CV_DiegoCórdovaRodríguez.pdf" class="cv-button">Descargar CV <span class="material-symbols-outlined">download</span></a>
     </header>
 
     <div class="back-button">
-        <a href="index.html#experiencia"><i class="fas fa-arrow-left"></i></a>
+        <a href="index.html#experiencia"><span class="material-symbols-outlined">arrow_back</span></a>
     </div>
 
     <div class="title" id="title">
@@ -51,10 +51,7 @@
     </div>
 
     <footer>
-        <a href="#">
-            <i class="fa-solid fa-arrow-up"></i>
-            Volver al inicio
-        </a>
+        <a href="#">Volver al inicio </a>
     </footer>
 
 </body>

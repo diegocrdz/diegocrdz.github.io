@@ -25,77 +25,119 @@ h2 {
     font-size: 50px;
 }
 
-/* Header */
-
+/* Header Starts */
 header {
     top: 0;
     left: 0;
     position: fixed;
     width: 100%;
-    background-color: transparent;
-    color: #fff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: #313131;
     padding: 20px 20px;
-    z-index: 99;
-}
-
-header .titulo {
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 20px;
-    color: white;
-}
-
-header nav {
-    margin-right: auto;
-}
-
-header nav ul {
-    display: flex;
     user-select: none;
-}
+    z-index: 99;
 
-header nav ul li {
-    margin: 0 10px;
-    list-style: none;
-}
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 20px;
+        color: white;
+    }
 
-header nav ul li a {
-    color: #c2c2c2;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.5s;
-}
+    .menu-toggle {
+        display: none;
+    }
 
-header nav ul li a:hover {
-    color: #fff;
-    background-color: #5a5a5a;
-    border-radius: 10px;
-}
+    nav ul {
+        display: flex;
+        user-select: none;
+    }
 
-header .btn-descargarcv {
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 5px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: 50px;
-    font-weight: bold;
-    transition: 0.5s;
-}
+    nav ul li {
+        margin: 0 10px;
+        list-style: none;
+    }
 
-header .btn-descargarcv:hover {
-    background-color: #fff;
-    color: #313131;
-}
+    nav ul li a {
+        color: #c2c2c2;
+        padding: 3px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.2s;
+    }
 
-.menu-toggle {
-    display: none;
+    nav ul li a:hover {
+        color: #202020;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .cv-button {
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: #fff;
+            color: #313131;
+            transition: 0.2s;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .menu-toggle {
+            color: white;
+            display: block;
+            cursor: pointer;
+            font-size: 25px;
+            padding: 10px;
+            margin-left: 20px;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #5a5a5a;
+                border-radius: 5px;
+            }
+        }
+        
+        nav ul {
+            display: none;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            top: 60px;
+            left: 0;
+            text-align: center;
+            background-color: #313131;
+            border-radius: 20px;
+            padding: 20px 0;
+            position: absolute;
+            z-index: -1;
+
+            li {
+                font-size: 30px;
+                margin: 30px 0;
+            }
+        }
+
+        nav ul.active {
+            display: flex;
+        }
+    }
 }
+/* Header Ends */
 
 /* Initial section */
 
@@ -121,7 +163,9 @@ header .btn-descargarcv:hover {
         font-size: 20px;
         margin-bottom: 50px;
     }
-    a {
+    .contact-button {
+        display: inline-flex;
+        align-items: center;
         color: #fff;
         border: 2px solid #fff;
         border-radius: 10px;
@@ -139,11 +183,11 @@ header .btn-descargarcv:hover {
 }
 .inicio .container .image {
     margin-right: 50px;
-}
-.inicio img {
+    img {
     width: 300px;
     height: auto;
     border-radius: 50%;
+    }
 }
 
 /* About me section */
@@ -155,10 +199,9 @@ header .btn-descargarcv:hover {
     flex-direction: column;
     height: 100vh;
 
-    background-image: url("images/Sky.png");
+    background-image: url('images/Sky.png');
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Change the opacity here */
 
     h2 {
         text-align: center;
@@ -175,6 +218,10 @@ header .btn-descargarcv:hover {
 
 /* Experience Section */
 
+.experiencia h2
+{
+    margin-top: 50px;
+}
 .experiencia ul li .contenedor-media
 {
     display: flex;
@@ -280,58 +327,6 @@ header .btn-descargarcv:hover {
         width: 100%;
         height: auto;
     }
-    .menu-toggle
-    {
-        color: white;
-        display: block;
-        cursor: pointer;
-        font-size: 25px;
-        padding: 10px;
-        margin-left: 20px;
-        user-select: none; /* Prevent text selection */
-    }
-    
-    header nav ul
-    {
-        display: none;
-        flex-direction: column;
-        background-color: #313131;
-        border-radius: 20px;
-        padding: 20px 0 20px 25px;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        z-index: -1;
-        animation: dropUp 0.2s ease-in-out;
-    }
-    @keyframes dropDown
-    {
-        0%
-        {
-            transform: translateY(-10%);
-            opacity: 0;
-        }
-        100%
-        {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    header nav ul.active {
-        display: flex;
-        animation: dropDown 0.2s ease-in-out;
-    }
-    
-    nav ul li
-    {
-        padding: 10px 10px;
-    }
-    .titulo
-    {
-        display: none;
-    }
-
     .habilidades ul
     {
         padding: 0;
@@ -378,26 +373,28 @@ header .btn-descargarcv:hover {
     text-decoration: underline;
 }
 
-/* Footer */
-footer
-{
+/* Footer starts */
+footer {
     text-align: center;
     padding: 50px 0;
     background-color: #313131;
     color: #fff;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 5px;
+        transition: 0.1s;
+
+        &:hover {
+            color: black;
+            background-color: white;
+            border-radius: 5px;
+            transition: 0.1s;
+        
+        }
+    }
 }
-footer a
-{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.1s;
-}
-footer a:hover
-{
-    color: #fff;
-    background-color: #5a5a5a;
-    border-radius: 10px;
-    transition: 0.1s;
-}
+/* Footer ends */

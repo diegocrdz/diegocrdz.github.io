@@ -26,6 +26,10 @@ h2 {
     color: white;
     font-weight: bolder;
     font-size: 50px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 20px;
+    }
 }
 
 /* Header Starts */
@@ -144,8 +148,7 @@ header {
 }
 /* Header Ends */
 
-/* Initial section */
-
+/* Initial section begins */
 .inicio {
     height: 100vh;
     display: flex;
@@ -195,8 +198,37 @@ header {
     }
 }
 
-/* About me section */
+@media screen and (max-width: 1024px){
+    .inicio
+    {
+        height: 100vh;
 
+        .container {
+            flex-direction: column;
+
+            .content {
+                h1 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .image {
+                margin: 0;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+/* Initial section ends */
+
+/* About me section begins */
 .about-me {
     display: flex;
     justify-content: center;
@@ -297,26 +329,6 @@ header {
 
 @media screen and (max-width: 1024px)
 {
-    .inicio
-    {
-        .container {
-            flex-direction: column;
-
-            .content {
-                h1 {
-                    font-size: 30px;
-                }
-                p {
-                    font-size: 15px;
-                }
-            }
-
-            .image img {
-                width: 200px;
-                height: auto;
-            }
-        }
-    }
     .experiencia ul li .contenedor-media video
     {
         width: 100%;

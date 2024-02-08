@@ -25,7 +25,7 @@ h2 {
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 30px;
 
     @media screen and (max-width: 1024px) {
         font-size: 20px;
@@ -253,137 +253,94 @@ header {
     }
 }
 
-/* Experience Section */
-
-.experiencia h2
-{
-    margin-top: 50px;
+/* Experiencia inicia*/
+.experiencia {
+    margin-top: 100px;
 }
-.experiencia ul li .contenedor-media
-{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: auto;
-}
-.experiencia ul li .contenedor-media video
-{
-    width: 60%;
-    height: auto;
-}
-.experiencia ul li .contenedor-media img
-{
-    width: 60%;
-    height: auto;
-}
-.experiencia .btn-snr
-{
+.experiencia .contenido{
     display: flex;
     justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    border: 2px solid #636363;
+    border-radius: 10px;
+    padding: 20px;
+}
+.experiencia .contenido a{
     color: #fff;
+    text-decoration: none;
     border: 2px solid #fff;
     border-radius: 10px;
+    background-color: #383838;
     padding: 10px;
-    text-decoration: none;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
-    transition: 0.5s;
-}
-.experiencia .btn-snr:hover
-{
-    background-color: #fff;
-    color: #313131;
-}
-.experiencia ul li .contenedor-media img:hover
-{
-    transition: 0.5s;
-    opacity: 50%;
-}
+    transition: 0.2s;
 
-/* Abilities section */
-
-.habilidades ul
-{
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
+    &:hover {
+        background-color: #fff;
+        color: #313131;
+        transition: 0.2s;
+    }
 }
+/* Experiencia termina*/
 
-.habilidades ul li
-{
-    background-color: #202020;
-    color: white;
-    margin: 0 10%;
+/* Educacion inicia*/
+.educacion {
+    margin-top: 100px;
+}
+.educacion .contenido{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    border: 2px solid #636363;
+    border-radius: 10px;
     padding: 20px;
-    display: flex; /* Add flex display */
-    flex-direction: column; /* Set flex direction */
-    align-items: center; /* Center vertically */
-    margin-bottom: 15%;
-    border: solid rgb(99, 99, 99) 5px; /* Add border */
-    border-radius: 20px; /* Rounded borders */
-    box-shadow: 0 0 50px black; /* Add shadow */
 }
+.educacion .contenido a{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #383838;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    transition: 0.2s;
 
-/* For different screen sizes */
-
-@media screen and (max-width: 1024px)
-{
-    .experiencia ul li .contenedor-media video
-    {
-        width: 100%;
-        height: auto;
-    }
-    .experiencia ul li .contenedor-media img
-    {
-        width: 100%;
-        height: auto;
-    }
-    .habilidades ul
-    {
-        padding: 0;
-        margin: 0;
-        display:block;
-        grid-template-columns: auto;
-        column-gap: 5px; /* Reduce the gap between columns */
-        row-gap: 5px; /* Reduce the gap between rows */
-    }
-    .habilidades ul li
-    {
-        margin-bottom: 5%;
+    &:hover {
+        background-color: #fff;
+        color: #313131;
+        transition: 0.2s;
     }
 }
+/* Educacion termina*/
 
-/* Others */
-
-.contacto ul,
-.experiencia ul,
-.educacion ul,
-.habilidades ul
-{
-    list-style-type: none;
-    padding: 0;
+/* Habilidades inicia*/
+.habilidades {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
-.contacto li,
-.experiencia li,
-.educacion li,
-.habilidades li
-{
+.habilidades .contenido{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.habilidades .contenido ul li{
+    list-style: none;
     margin-bottom: 50px;
 }
-
-.contacto a,
-.habilidades a
-{
-    text-decoration: none;
+.habilidades .contenido a{
+    color: #8fdfff;
 }
-
-.contacto a:hover,
-.habilidades a:hover
-{
-    text-decoration: underline;
-}
+/* Habilidades termina*/
 
 /* Footer starts */
 footer {

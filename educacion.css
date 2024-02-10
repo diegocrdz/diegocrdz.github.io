@@ -7,7 +7,7 @@ html {
 
 body {
     background-color: #202020;
-    font-family: 'Space mono', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,18 +17,6 @@ section {
 
     @media screen and (max-width: 1024px) {
         padding: 0 50px;
-    }
-}
-
-h2 {
-    margin-top: 0;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 50px;
-
-    @media screen and (max-width: 1024px) {
-        font-size: 20px;
     }
 }
 
@@ -48,7 +36,6 @@ header {
 
     .logo {
         font-size: 30px;
-        font-weight: bold;
         text-decoration: none;
         margin-left: 20px;
         color: white;
@@ -74,7 +61,6 @@ header {
             color: #c2c2c2;
             padding: 3px;
             text-decoration: none;
-            font-weight: bold;
             transition: 0.2s;
 
             &:hover {
@@ -148,43 +134,20 @@ header {
 }
 /* Header Ends */
 
-/* Abilities section starts */
-.habilidades ul
-{
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
+.educacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
 }
-
-.habilidades ul li
-{
-    background-color: #202020;
-    color: white;
-    margin: 0 10%;
-    padding: 20px;
-    display: flex; /* Add flex display */
-    flex-direction: column; /* Set flex direction */
-    align-items: center; /* Center vertically */
-    margin-bottom: 15%;
-    border: solid rgb(99, 99, 99) 5px; /* Add border */
-    border-radius: 20px; /* Rounded borders */
-    box-shadow: 0 0 50px black; /* Add shadow */
+.educacion h2 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    text-align: center;
 }
-
-@media screen and (max-width: 1024px)
-{
-    .habilidades ul
-    {
-        padding: 0;
-        margin: 0;
-        display:block;
-        grid-template-columns: auto;
-        column-gap: 5px; /* Reduce the gap between columns */
-        row-gap: 5px; /* Reduce the gap between rows */
-    }
-    .habilidades ul li
-    {
-        margin-bottom: 5%;
-    }
+.educacion ul li {
+    list-style: none;
+    margin-bottom: 100px;
 }
-/* Abilities section ends */

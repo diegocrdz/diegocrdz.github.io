@@ -7,9 +7,13 @@ html {
 
 body {
     background-color: #202020;
-    font-family: 'Space mono', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
 }
 
 section {
@@ -17,18 +21,6 @@ section {
 
     @media screen and (max-width: 1024px) {
         padding: 0 50px;
-    }
-}
-
-h2 {
-    margin-top: 0;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 50px;
-
-    @media screen and (max-width: 1024px) {
-        font-size: 20px;
     }
 }
 
@@ -48,7 +40,6 @@ header {
 
     .logo {
         font-size: 30px;
-        font-weight: bold;
         text-decoration: none;
         margin-left: 20px;
         color: white;
@@ -74,13 +65,12 @@ header {
             color: #c2c2c2;
             padding: 3px;
             text-decoration: none;
-            font-weight: bold;
             transition: 0.2s;
 
             &:hover {
                 color: #202020;
-            background-color: white;
-            border-radius: 5px;
+                background-color: white;
+                border-radius: 5px;
             }
         }
     }
@@ -148,51 +138,73 @@ header {
 }
 /* Header Ends */
 
-/* Experience section starts */
-.experiencia h2
-{
-    margin-top: 50px;
-}
-.experiencia ul li .contenedor-media
-{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: auto;
-}
-.experiencia ul li .contenedor-media video
-{
-    width: 60%;
-    height: auto;
-}
-.experiencia ul li .contenedor-media img
-{
-    width: 60%;
-    height: auto;
-}
-.experiencia .btn-snr
-{
+.experiencia {
     display: flex;
     justify-content: center;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 0;
-    margin-right: 0;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.experiencia h2 {
+    font-size: 40px;
+    margin-bottom: 100px;
     font-weight: bold;
-    transition: 0.5s;
+    text-align: center;
 }
-.experiencia .btn-snr:hover
-{
-    background-color: #fff;
-    color: #313131;
+.experiencia ul li {
+    list-style: none;
+    margin-bottom: 100px;
+    border: 2px solid #626262;
+    border-radius: 15px;
+    padding: 20px;
 }
-.experiencia ul li .contenedor-media img:hover
-{
-    transition: 0.5s;
-    opacity: 50%;
+.contenedor-media {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+    video {
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: black 0px 0px 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: black 0px 0px 20px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+}
+
+.btn-snr {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #313131;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: #fff;
+        color: #313131;
+        transition: 0.2s;
+    }
 }
 
 @media screen and (max-width: 1024px)

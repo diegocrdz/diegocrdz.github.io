@@ -122,25 +122,37 @@ h2 {
 /* About me section begins */
 .about-me {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 100vh;
+    justify-content: center;
+    align-items: start;
+    padding: 5% 20%;
 
-    background-image: url('images/Sky.png');
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 2)), url('images/Sky.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     h2 {
-        text-align: center;
         color: white;
         font-weight: bolder;
-        font-size: 50px;
+        font-size: 100px;
     }
 
     p {
-        text-align: justify;
-        font-size: 20px;
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 5% 10%;
+
+        h2 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+        
     }
 }
 

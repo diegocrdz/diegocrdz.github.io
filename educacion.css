@@ -40,4 +40,7 @@ section {
 .educacion ul li {
     list-style: none;
     margin-bottom: 100px;
+    border: 2px solid #626262;
+    border-radius: 15px;
+    padding: 20px;
 }

@@ -46,6 +46,10 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+.inicio .ultact {
+    color: #909090;
+    font-size: 15px;
+}
 .inicio .container {
     display: flex;
     justify-content: center;

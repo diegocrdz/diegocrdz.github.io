@@ -40,11 +40,12 @@ h2 {
 
 /* Initial section begins */
 .inicio {
+    margin-top: 25px; /* Altura del header */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 .inicio .ultact {
     color: #909090;
@@ -89,14 +90,41 @@ h2 {
     img {
     width: 300px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 5%;
+    border: #fff 2px solid;
+    }
+}
+.inicio .cualidades{
+    
+    ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    list-style: none;
+    }
+
+    li {
+        user-select: none;
+        margin: 0 20px;
+        font-size: 10px;
+        color: #b7b7b7;
+        border: 2px solid #b7b7b7;
+        border-radius: 10px;
+        padding: 10px;
+        width: 200px;
+
+        &:hover {
+            color: #fff;
+            border: 2px solid #fff;
+            transition: 0.2s;
+        }
     }
 }
 
 @media screen and (max-width: 1024px){
     .inicio
     {
-        margin-top: 100px;
+        margin-top: 50px;
 
         .container {
             flex-direction: column;
@@ -118,6 +146,10 @@ h2 {
                     height: auto;
                 }
             }
+        }
+
+        .cualidades {
+            display: none;
         }
     }
 }

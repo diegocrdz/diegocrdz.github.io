@@ -19,10 +19,10 @@ body {
 }
 
 section {
-    padding: 0 150px;
+    padding: 0 15%;
 
     @media screen and (max-width: 1024px) {
-        padding: 0 50px;
+        padding: 0 5%;
     }
 }
 
@@ -118,10 +118,12 @@ h2 {
         border-radius: 10px;
         padding: 10px;
         width: 200px;
+        transition: 0.2s;
 
         &:hover {
             color: #fff;
             border: 2px solid #fff;
+            transform: scale(1.02);
             transition: 0.2s;
         }
     }
@@ -167,12 +169,12 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 5% 20%;
-
-    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 2)), url('images/Sky.png');
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    background-image: linear-gradient(to right, #202020, #3b4684);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 
     h2 {
         color: white;
@@ -194,7 +196,7 @@ h2 {
         p {
             font-size: 15px;
         }
-        
+
     }
 }
 

@@ -24,12 +24,31 @@ section {
     }
 }
 
+.titulo {
+    margin-top: 60px;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: #000000;
+    border-bottom: #626262 2px solid;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 20px;
+    }
+}
+
 .experiencia {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 .experiencia h2 {
     font-size: 40px;
@@ -47,32 +66,33 @@ section {
     border: 2px solid #626262;
     border-radius: 15px;
     padding: 20px;
+
+    transition: 0.2s;
+
+    &:hover {
+        background-color: #313131;
+        border: 2px solid #626262;
+    }
 }
 .contenedor-media {
+    user-select: none;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+
+    transition: 0.2s;
     
-    video {
+    video, img {
         width: 50%;
         height: auto;
         border-radius: 15px;
         box-shadow: black 0px 0px 20px;
 
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
-    img {
-        width: 50%;
-        height: auto;
-        border-radius: 15px;
-        box-shadow: black 0px 0px 20px;
+        transition: 0.2s;
 
         &:hover {
             cursor: pointer;
-            opacity: 0.7;
+            transform: scale(1.01);
         }
     }
 }

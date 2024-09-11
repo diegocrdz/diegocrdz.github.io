@@ -53,6 +53,25 @@ section {
 }
 /* Back button ends*/
 
+.titulo {
+    margin-top: 60px;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: #000000;
+    border-bottom: #626262 2px solid;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 20px;
+    }
+}
+
 /* Contact */
 
 .contact {
@@ -61,7 +80,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    margin-top: 100px;
     color: white;
 
     h1 {

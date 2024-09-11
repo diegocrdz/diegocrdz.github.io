@@ -16,11 +16,6 @@
     }
 }
 
-.header.scrolled {
-    background-color: #888888;
-    border-bottom:#c2c2c2 2px solid;
-}
-
 .header .content-header {
     display: flex;
     height: auto;

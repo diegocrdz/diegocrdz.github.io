@@ -1,14 +1,3 @@
-document.addEventListener("DOMContentLoaded", function ()
-{
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".header nav ul");
-
-    menuToggle.addEventListener("click", function ()
-    {
-        navLinks.classList.toggle("active");
-    });
-});
-
 // Add header to the HTML file
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -16,5 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.text())
     .then(data => {
         document.getElementById("header").innerHTML = data;
+
+        // Después de que el header se ha cargado, añade los manejadores de eventos
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector("nav ul");
+
+        menuToggle.addEventListener("click", function() {
+            navLinks.classList.toggle("active");
+        });
     });
 });

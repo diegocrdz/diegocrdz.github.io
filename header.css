@@ -7,8 +7,13 @@
     width: 100%;
     display: flex;
     background-color: #313131;
-    border-bottom:#c2c2c2 2px solid;
+    border-bottom:#5a5a5a 2px solid;
     z-index: 99;
+    transition: 0.2s;
+
+    &:hover {
+        border-bottom: #c2c2c2 2px solid;
+    }
 }
 
 .header .content-header {
@@ -18,7 +23,6 @@
     margin-left: 15%;
     margin-right: 15%;
     align-items: center;
-    background-color: #313131;
     user-select: none;
 
     @media screen and (max-width: 1024px) {
@@ -106,19 +110,25 @@
     .header nav ul {
         display: none;
         flex-direction: column;
-        top: 25px;
+        top: 40px;
+        width: 100%;
         left: 0;
         margin-left: 0;
-        padding: 30px;
+        padding: 20px;
         align-items: left;
         background-color: #313131;
-        border-radius: 20px;
         position: absolute;
+        border-bottom: #5a5a5a 2px solid;
         z-index: -1;
+
+        li {
+            margin: 10px 0;
+        }
     }
-    
-    nav ul.active {
+
+    .header nav ul.active {
         display: inline-flex;
+        z-index: 1;
     }
 
     .header ul li {

@@ -114,7 +114,9 @@
         width: 100%;
         left: 0;
         margin-left: 0;
-        padding: 20px;
+        padding-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         align-items: left;
         background-color: #313131;
         position: absolute;

@@ -24,6 +24,11 @@ section {
     }
 }
 
+a {
+    text-decoration: underline;
+    color: #71bfff;
+}
+
 .titulo {
     margin-top: 60px;
     height: 30vh;
@@ -83,7 +88,7 @@ section {
     transition: 0.2s;
     
     video, img {
-        width: 50%;
+        width: 80%;
         height: auto;
         border-radius: 15px;
         box-shadow: black 0px 0px 20px;

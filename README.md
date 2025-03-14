@@ -13,5 +13,3 @@
 :office_worker: Diego Córdova Rodríguez
 
 :envelope: diegocordova.rdz@hotmail.com
-
-:telephone_receiver: 55 6677 5597

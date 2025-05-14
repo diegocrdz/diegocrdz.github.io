@@ -1,0 +1,14 @@
+/* Sebas Night Runner Button */
+.btn-snr {
+    background-color: #685185;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.btn-snr:hover {
+    background-color: #c488b6;
+    transition-duration: 0.2s;
+}

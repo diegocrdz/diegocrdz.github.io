@@ -1,0 +1,121 @@
+/* HTML */
+html {
+    background-color: #202020;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Icons */
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+body {
+    background-color: #202020;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0 15%;
+}
+
+.titulo {
+    margin-top: 60px;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: #000000;
+    border-bottom: #626262 2px solid;
+}
+
+.contenido {
+    margin-top: 50px;
+}
+.contenido h2 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+.contenido ul {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido ul li {
+    list-style: none;
+    margin-bottom: 100px;
+    border: 2px solid #626262;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+.contenido ul li:hover {
+    background-color: #313131;
+    border: 2px solid #626262;
+}
+
+.media-boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.media-boton a {
+    width: 100%;
+}
+
+.contenedor-media {
+    user-select: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: 0.2s;
+}
+.contenedor-media video, .contenedor-media img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: black 0px 0px 20px;
+    transition: 0.2s;
+}
+.contenedor-media video:hover, .contenedor-media img:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 1024px)
+{
+    section {
+        padding: 0 10%;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .contenedor-media video {
+        width: 100%;
+        height: auto;
+    }
+    .contenedor-media img {
+        width: 100%;
+        height: auto;
+    }
+}

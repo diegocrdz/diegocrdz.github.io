@@ -1,0 +1,137 @@
+/* Back button */
+.back-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    position: fixed;
+    top: 120px;
+    left: 40px;
+
+    background-color: #5a5a5a;
+    color: #fff;
+    text-decoration: none;
+
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover
+    {
+        background-color: white;
+        color: black;
+        transition: 0.2s;
+    }
+}
+
+
+/* Title section */
+.title
+{
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(255, 157, 230);
+    font-weight: bolder;
+    font-size: 20px; /* Adjust the value as needed */
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        font-size: 10px;
+    }
+}
+.title img
+{
+    width: 50%;
+    height: auto;
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        width: 80%;
+    }
+}
+
+/* Introduction section */
+
+.introduction
+{
+    margin: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        font-size: 20px;
+    }
+}
+
+.play-button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10vh 50vh 25vh 50vh;
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 1024px)
+    {
+        
+        margin: 20vh 20vh 25vh 20vh;
+    }
+}
+
+.play-button a
+{
+    color: #ff8bef;
+    background-color: #7337ff;
+    border: 15px solid black;
+    border-radius: 80px;
+    padding: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 1s;
+}
+.play-button a:hover
+{
+    color: #4c00ff;
+    background-color: #ff62ea;
+    transition: 0.5s;
+}
+
+.play-button p
+{
+    color: #a7a7a7;
+}
+
+@media screen and (max-width: 1024px)
+{
+    section
+    {
+        padding: 0 20px;
+    }
+    .introduction
+    {
+        margin: 0 10%;
+    }
+}

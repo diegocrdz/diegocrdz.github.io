@@ -21,6 +21,11 @@ section {
     padding: 0 15%;
 }
 
+a {
+    text-decoration: underline;
+    color: rgb(141, 205, 240);
+}
+
 .titulo {
     margin-top: 60px;
     height: 30vh;
@@ -78,7 +83,7 @@ section {
     align-items: center;
 }
 .media-boton a {
-    width: 100%;
+    width: 80%;
 }
 
 .contenedor-media {
@@ -89,7 +94,7 @@ section {
     transition: 0.2s;
 }
 .contenedor-media video, .contenedor-media img {
-    width: 50%;
+    width: 80%;
     height: auto;
     border-radius: 15px;
     box-shadow: black 0px 0px 20px;

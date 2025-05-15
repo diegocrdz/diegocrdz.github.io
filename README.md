@@ -6,7 +6,7 @@
 # :arrow_right:[diegocrdz.github.io/es](https://diegocrdz.github.io/es):arrow_left:
 
 # Welcome to my official Web Page
-# :arrow_right:[diegocrdz.github.io/en](https://diegocrdz.github.io/es):arrow_left:
+# :arrow_right:[diegocrdz.github.io/en](https://diegocrdz.github.io/en):arrow_left:
 
 ---
 

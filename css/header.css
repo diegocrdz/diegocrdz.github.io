@@ -10,13 +10,12 @@
     border-bottom:#5a5a5a 2px solid;
     z-index: 99;
     transition: 0.2s;
-
-    &:hover {
-        border-bottom: #c2c2c2 2px solid;
-    }
+}
+.header:hover {
+    border-bottom: #c2c2c2 2px solid;
 }
 
-.header .content-header {
+.content-header {
     display: flex;
     height: auto;
     width: 100%;
@@ -24,11 +23,6 @@
     margin-right: 15%;
     align-items: center;
     user-select: none;
-
-    @media screen and (max-width: 1024px) {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 }
 
 .header .logo {
@@ -42,30 +36,24 @@
     display: none;
 }
 
-.header nav {
-
-    ul {
-        display: flex;
-        user-select: none;
-    }
-
-    ul li {
-        margin: 0 10px;
-        list-style: none;
-    }
-
-    ul li a {
-        color: #c2c2c2;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.2s;
-
-        &:hover {
-            color: #202020;
-        text-decoration: underline;
-        color: white;
-        }
-    }
+.header nav ul {
+    display: flex;
+    user-select: none;
+}
+.header nav ul li {
+    margin: 0 10px;
+    list-style: none;
+}
+.header nav ul li a {
+    color: #c2c2c2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;  
+}
+.header nav ul li a:hover {
+    color: #202020;
+    text-decoration: underline;
+    color: white;
 }
 
 .header .cv-button {
@@ -80,12 +68,11 @@
     align-items: center;
     font-weight: bold;
     transition: 0.2s;
-
-    &:hover {
-        background-color: #fff;
-        color: #313131;
-        transition: 0.2s;
-    }
+}
+.header .cv-button:hover {
+    background-color: #fff;
+    color: #313131;
+    transition: 0.2s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -96,46 +83,40 @@
         font-size: 25px;
         padding: 10px;
         transition: 0.2s;
-
-        &:hover {
-            background-color: #5a5a5a;
-            border-radius: 5px;
-        }
+        margin-right: 10px;
+    }
+    .menu-toggle:hover {
+        background-color: #5a5a5a;
+        border-radius: 5px;
     }
 
-    .header a {
-        margin-left: 10px;
+    .content-header {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .header nav {
+        font-size: 20px;
     }
 
     .header nav ul {
-        display: none;
+        display: flex;
         flex-direction: column;
-        top: 40px;
+        justify-content: space-between;
         width: 100%;
+        top: 60px;
+        gap: 40px;
         left: 0;
-        margin-left: 0;
-        padding-left: 5%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        align-items: left;
+        margin: 0;
+        box-sizing: border-box;
         background-color: #313131;
         position: absolute;
         border-bottom: #5a5a5a 2px solid;
-        z-index: -1;
-
-        li {
-            margin: 10px 0;
-        }
+        max-height: 0;
+        overflow: hidden;
     }
-
     .header nav ul.active {
-        display: inline-flex;
+        max-height: 100vh;
+        padding: 5%;
         z-index: 1;
-    }
-
-    .header ul li {
-        padding: 0;
-        margin: 20px 20px 20px 0; /* arriba, derecha, abajo, izquierda */
-        font-size: 20px;
     }
 }

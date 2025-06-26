@@ -1,12 +1,3 @@
-/* HTML */
-html {
-    background-color: #202020;
-    color: white;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #202020;
     font-family: 'Work Sans', sans-serif;
@@ -41,7 +32,7 @@ h2 {
 /* Initial section begins */
 .inicio {
     margin-top: 60px; /* Para que no se superponga con el header */
-    height: 100vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,13 +122,7 @@ h2 {
         &:hover {
             color: #fff;
             border: 2px solid #fff;
-            background: #383838;
-            transform: scale(1.02);
             transition: 0.2s;
-        }
-
-        &:active {
-            transform: scale(1);
         }
     }
 }

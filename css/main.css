@@ -1,0 +1,8 @@
+/* Default HTML styles */
+html {
+    background-color: #202020;
+    color: white;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}

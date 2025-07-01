@@ -1,8 +1,54 @@
 /* Default HTML styles */
+:root {
+    --header-bg-color: #313131;
+    --header-logo-color: white;
+    --header-unselected-color: #c2c2c2;
+    --header-selected-color: white;
+
+    --about-me-bg-color: linear-gradient(to right, #202020, #292d4d);
+
+    --cv-primary-color: white;
+    --cv-secondary-color: black;
+}
+
 html {
-    background-color: #202020;
-    color: white;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #202020;
+    color: white;
+
+    --header-bg-color: #313131;
+    --header-logo-color: white;
+    --header-unselected-color: #c2c2c2;
+    --header-selected-color: white;
+    --cv-primary-color: white;
+    --cv-secondary-color: black;
+
+    --about-me-bg-color: linear-gradient(to right, #202020, #4d5d73);
+}
+
+.light-mode {
+    background-color: #e2e2e2;
+    color: black;
+
+    --header-bg-color: #f0f0f0;
+    --header-logo-color: black;
+    --header-unselected-color: #636363;
+    --header-selected-color: black;
+    --cv-primary-color: black;
+    --cv-secondary-color: white;
+
+    --about-me-bg-color: linear-gradient(to right, #c5c5c5, #97accc);
 }

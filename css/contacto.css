@@ -48,7 +48,7 @@
     gap: 10px;
 }
 .contenido ul li:hover {
-    background-color: #2e2e2e;
+    background-color: var(--header-bg-color);
     transition: 0.2s;
 }
 .contenido ul li a {

@@ -1,17 +1,9 @@
-/* HTML */
-html {
-    background-color: #202020;
-    color: white;
-    scroll-behavior: smooth;
-}
-
 /* Icons */
 .material-symbols-outlined {
     vertical-align: middle;
 }
 
 body {
-    background-color: #202020;
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -72,8 +64,7 @@ a {
     transition: 0.2s;
 }
 .contenido ul li:hover {
-    background-color: #313131;
-    border: 2px solid #626262;
+    background-color: var(--header-bg-color);
 }
 
 .media-boton {

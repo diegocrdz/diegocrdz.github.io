@@ -1,10 +1,3 @@
-body {
-    background-color: #202020;
-    font-family: 'Work Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .material-symbols-outlined {
     vertical-align: middle;
 }
@@ -20,7 +13,6 @@ section {
 h2 {
     margin-top: 0;
     text-align: center;
-    color: white;
     font-weight: bolder;
     font-size: 30px;
 
@@ -32,11 +24,11 @@ h2 {
 /* Initial section begins */
 .inicio {
     margin-top: 60px; /* Para que no se superponga con el header */
-    height: 92vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    color: white;
     background-image: url('../media/img/background.webp');
     background-size: cover;
     background-position: center;
@@ -179,7 +171,7 @@ h2 {
     padding-top: 5%;
     padding-bottom: 5%;
     
-    background-image: linear-gradient(to right, #202020, #292d4d);
+    background-image: var(--about-me-bg-color);
     background-size: cover;
     background-position: center;
 
@@ -187,7 +179,6 @@ h2 {
     border-bottom: #636363 2px solid;
 
     h2 {
-        color: white;
         font-weight: bolder;
         font-size: 100px;
     }
@@ -285,7 +276,7 @@ h2 {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    border: 2px solid #fff;
+    border: 2px solid #636363;
     border-radius: 10px;
     padding: 20px;
 }
@@ -300,33 +291,3 @@ h2 {
     color: #8fdfff;
 }
 /* Habilidades termina*/
-
-/* Footer starts */
-footer {
-    text-align: center;
-    user-select: none;
-    padding: 25px 0;
-    background-color: #313131;
-
-    border-top: #636363 2px solid;
-    transition: 0.2s;
-
-    a {
-        text-decoration: none;
-        color: #b7b7b7;
-        font-weight: bold;
-        font-size: 20px;
-        padding: 5px;
-        transition: 0.2s;
-
-        &:hover {
-            color: white;
-            text-decoration: underline;
-        }
-    }
-
-    &:hover {
-        border-top: 2px solid #b7b7b7;
-    }
-}
-/* Footer ends */

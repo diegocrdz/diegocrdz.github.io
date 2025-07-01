@@ -14,5 +14,35 @@ document.addEventListener("DOMContentLoaded", function() {
         menuToggle.addEventListener("click", function() {
             navLinks.classList.toggle("active");
         });
+
+        // Dark/light mode toggle
+        const modeToggle = document.querySelector("#mode-btn");
+        const body = document.body;
+
+        // Get saved mode from localStorage or default to dark
+        const savedMode = localStorage.getItem('theme-mode') || 'dark';
+        
+        // Apply the saved mode
+        if (savedMode === 'dark') {
+            body.classList.add("dark-mode");
+            body.classList.remove("light-mode");
+        } else {
+            body.classList.add("light-mode");
+            body.classList.remove("dark-mode");
+        }
+
+        modeToggle.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+
+            // Save the current mode to localStorage
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem('theme-mode', 'dark');
+            } else {
+                localStorage.setItem('theme-mode', 'light');
+            }
+        });
     });
 });

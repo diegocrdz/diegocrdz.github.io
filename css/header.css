@@ -6,7 +6,7 @@
     height: 8vh;
     width: 100%;
     display: flex;
-    background-color: #313131;
+    background-color: var(--header-bg-color);
     border-bottom:#5a5a5a 2px solid;
     z-index: 99;
     transition: 0.2s;
@@ -39,7 +39,7 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
     font-size: 25px;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: var(--header-logo-color);
 }
 .header .menu-toggle {
     display: none;
@@ -56,19 +56,19 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
     list-style: none;
 }
 .header nav ul li a {
-    color: #c2c2c2;
+    color: var(--header-unselected-color);
     text-decoration: none;
     font-weight: bold;
     transition: 0.2s;  
 }
 .header nav ul li a:hover {
-    color: white;
+    color: var(--header-selected-color);
 }
 
 .header .cv-button {
-    color: #fff;
+    color: var(--cv-primary-color);
     text-decoration: none;
-    border: 2px solid #fff;
+    border: 2px solid var(--cv-primary-color);
     border-radius: 5px;
     padding: 2px;
     margin-left: auto;
@@ -79,14 +79,34 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
     transition: 0.2s;
 }
 .header .cv-button:hover {
-    background-color: #fff;
-    color: #313131;
+    background-color: var(--cv-primary-color);
+    color: var(--cv-secondary-color);
     transition: 0.2s;
+}
+
+footer {
+    text-align: center;
+    user-select: none;
+    padding: 25px 0;
+    background-color: var(--header-bg-color);
+    border-top: #636363 2px solid;
+    transition: 0.2s;
+}
+footer a {
+    text-decoration: none;
+    color: var(--header-unselected-color);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.2s;
+}
+footer a:hover {
+    color: var(--header-selected-color);
 }
 
 @media screen and (max-width: 1024px) {
     .header .menu-toggle {
-        color: white;
+        color: var(--header-unselected-color);
         display: flex;
         cursor: pointer;
         font-size: 25px;
@@ -95,7 +115,7 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
         margin-right: 10px;
     }
     .menu-toggle:hover {
-        background-color: #5a5a5a;
+        color: var(--header-selected-color);
         border-radius: 5px;
     }
 
@@ -112,12 +132,12 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        top: 60px;
+        top: 8vh;
         gap: 40px;
         left: 0;
         margin: 0;
         box-sizing: border-box;
-        background-color: #313131;
+        background-color: var(--header-bg-color);
         position: absolute;
         border-bottom: #5a5a5a 2px solid;
         max-height: 0;
@@ -126,6 +146,16 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
     .header nav ul.active {
         max-height: 100vh;
         padding: 5%;
-        z-index: 1;
+        z-index: 98;
+    }
+
+    /* Hacer que el segundo nav también sea responsive */
+    .header nav:last-child ul {
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        overflow: visible;
+        border: none;
+        gap: 10px;
     }
 }

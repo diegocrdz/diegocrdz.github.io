@@ -23,18 +23,17 @@ h2 {
 
 /* Initial section begins */
 .inicio {
-    margin-top: 60px; /* Para que no se superponga con el header */
+    padding-top: 10vh; /* Para que no se superponga con el header */
     height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    background-image: url('../media/img/background.webp');
+    background-image: var(--bkg-inicio);
     background-size: cover;
     background-position: center;
 }
 .inicio .ultact {
-    color: #909090;
+    color: var(--cv-primary-color);
     font-size: 15px;
 }
 .inicio .container {
@@ -54,9 +53,8 @@ h2 {
     .contact-button {
         display: inline-flex;
         align-items: center;
-        color: #fff;
-        background-color: #383838;
-        border: 2px solid #fff;
+        color: var(--cv-primary-color);
+        border: 2px solid var(--cv-primary-color);
         border-radius: 10px;
         padding: 10px;
         text-decoration: none;
@@ -64,8 +62,8 @@ h2 {
         transition: 0.2s;
 
         &:hover {
-            background-color: #fff;
-            color: #313131;
+            background-color: var(--cv-primary-color);
+            color: var(--cv-secondary-color);
             transition: 0.2s;
         }
     }
@@ -105,18 +103,124 @@ h2 {
         flex-basis: 100%; /* Para que cada li ocupe el 100% del espacio */
         margin-right: 20px; /* Espacio entre cada li */
         font-size: 15px; 
-        color: #b7b7b7;
-        border: 2px solid #b7b7b7;
+        color: var(--header-unselected-color);
+        border: 2px solid var(--header-unselected-color);
         border-radius: 10px;
         padding: 10px;
         transition: 0.2s;
 
         &:hover {
-            color: #fff;
-            border: 2px solid #fff;
+            color: var(--header-selected-color);
+            border: 2px solid var(--header-selected-color);
             transition: 0.2s;
         }
     }
+}
+
+/* About me section begins */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    background-image: var(--about-me-bg-color);
+    background-size: cover;
+    background-position: center;
+
+    border-top: #636363 2px solid;
+    border-bottom: #636363 2px solid;
+}
+.about-me h2 {
+    font-weight: bolder;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.about-me p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+/* Sections grid */
+
+.sections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 10%;
+    gap: 20px;
+}
+.section-item {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    flex-direction: column;
+    border: 2px solid #636363;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+}
+.section-item h3 {
+    font-size: 25px;
+    margin: 0;
+}
+.section-item a {
+    color: var(--cv-primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid var(--cv-primary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+.section-item a:hover {
+    background-color: var(--cv-primary-color);
+    color: var(--cv-secondary-color);
+    transition: 0.2s;
+}
+
+/* Habilidades */
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.habilidades {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.habilidades .contenido {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+.habilidades .contenido ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+.habilidades .contenido ul li {
+    list-style: none;
+    padding-left: 20px;
+    padding: 10px;
+    border: 2px solid #636363;
+    border-left: 8px solid var(--cv-primary-color);
+    border-radius: 10px;
+}
+.habilidades .contenido a {
+    color: #8fdfff;
 }
 
 @media screen and (max-width: 1024px){
@@ -159,135 +263,16 @@ h2 {
             }
         }
     }
-}
-/* Initial section ends */
 
-/* About me section begins */
-.about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
-    background-image: var(--about-me-bg-color);
-    background-size: cover;
-    background-position: center;
-
-    border-top: #636363 2px solid;
-    border-bottom: #636363 2px solid;
-
-    h2 {
-        font-weight: bolder;
-        font-size: 100px;
+    .about-me h2 {
+        font-size: 50px;
+    }
+    .about-me p {
+        font-size: 20px;
     }
 
-    p {
-        font-size: 25px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        
-        h2 {
-            font-size: 50px;
-        }
-
-        p {
-            font-size: 15px;
-        }
-
+    .sections-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
-
-/* Experiencia inicia*/
-.experiencia {
-    margin-top: 5%;
-}
-.experiencia .contenido{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    border: 2px solid #636363;
-    border-radius: 10px;
-    padding: 20px;
-}
-.experiencia .contenido a{
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: #383838;
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-    transition: 0.2s;
-
-    &:hover {
-        background-color: #fff;
-        color: #313131;
-        transition: 0.2s;
-    }
-}
-/* Experiencia termina*/
-
-/* Educacion inicia*/
-.educacion {
-    margin-top: 100px;
-}
-.educacion .contenido{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    border: 2px solid #636363;
-    border-radius: 10px;
-    padding: 20px;
-}
-.educacion .contenido a{
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: #383838;
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-    transition: 0.2s;
-
-    &:hover {
-        background-color: #fff;
-        color: #313131;
-        transition: 0.2s;
-    }
-}
-/* Educacion termina*/
-
-/* Habilidades inicia*/
-.habilidades {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-.habilidades .contenido{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    border: 2px solid #636363;
-    border-radius: 10px;
-    padding: 20px;
-}
-.habilidades .contenido ul{
-    padding-left: 0;
-}
-.habilidades .contenido ul li{
-    list-style: none;
-    margin-bottom: 50px;
-}
-.habilidades .contenido a{
-    color: #8fdfff;
-}
-/* Habilidades termina*/

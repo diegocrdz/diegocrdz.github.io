@@ -9,6 +9,8 @@
 
     --cv-primary-color: white;
     --cv-secondary-color: black;
+
+    --bkg-inicio: url('../media/img/bkg_dark.jpg');
 }
 
 html {
@@ -36,7 +38,8 @@ body {
     --cv-primary-color: white;
     --cv-secondary-color: black;
 
-    --about-me-bg-color: linear-gradient(to right, #202020, #4d5d73);
+    --about-me-bg-color: linear-gradient(to right, #000000, #2b2b2b);
+    --bkg-inicio: url('../media/img/bkg_dark.jpg');
 }
 
 .light-mode {
@@ -50,5 +53,6 @@ body {
     --cv-primary-color: black;
     --cv-secondary-color: white;
 
-    --about-me-bg-color: linear-gradient(to right, #c5c5c5, #97accc);
+    --about-me-bg-color: linear-gradient(to right, #dddddd, #b8b8b8);
+    --bkg-inicio: url('../media/img/bkg_light.jpg');
 }

@@ -105,6 +105,10 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    .header {
+        z-index: 99;
+    }
+
     .header .menu-toggle {
         color: var(--header-unselected-color);
         display: flex;
@@ -139,14 +143,15 @@ footer a:hover {
         box-sizing: border-box;
         background-color: var(--header-bg-color);
         position: absolute;
-        border-bottom: #5a5a5a 2px solid;
         max-height: 0;
         overflow: hidden;
+        transition: 0.3s ease-in-out;
     }
     .header nav ul.active {
         max-height: 100vh;
+        border-bottom: 2px solid #5a5a5a;
         padding: 5%;
-        z-index: 98;
+        z-index: 10;
     }
 
     /* Hacer que el segundo nav también sea responsive */

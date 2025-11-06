@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/experiencia.css">
     <!-- JavaScript -->
     <script src="../js/script.js"></script>
     <!-- Google Icons -->
@@ -20,51 +21,101 @@
 <body>
     <div id="header"></div>
 
-    <section class="titulo">
-        <h1>Education</h1>
-    </section>
-
-    <section class="contenido" id="educacion">
+    <nav class="exp-nav">
         <ul>
-            <li>
-                Tecnológico de Monterrey - B.S. in Computer Technologies Engineering (Current)
-                <p></p>
-                <strong>Academic Talent Scholarship</strong>
-                <p>GPA: 9.6 / 10</p>
-            </li>
-            <li>
-                Tecnológico de Monterrey - High School (2023-2027)
-                <p></p>
-                <strong>Academic Talent Scholarship</strong>
-                <p>
-                    Excellence recognition with a cumulative GPA of 9.6 / 10
-                </p>
-            </li>
-            <li>
-                Scholarship Service Project - (October 2023)
-                <p>
-                    I created and developed a proposal focused on note-taking within Tecnológico de Monterrey institutions
-                    to help students perform better in different areas. I conducted a series of surveys with 50
-                    people over 4 months to observe the results and apply different note-taking methods,
-                    such as the Cornell method, diagrams, abbreviations, etc. It was observed that the implementation of these methods helped
-                    students in more advanced semesters study fewer hours per week.
-                </p>
-            </li>
-            <li>
-                La Salle de Seglares - Middle School (2017-2021)
-                <p></p>
-                <p>
-                    Cumulative GPA of 9.7 / 10
-                </p>
-            </li>
-            <li>
-                La Salle de Seglares - Elementary School (2011-2017)
-                <p></p>
-                <p>
-                    Cumulative GPA of 9.3 / 10
-                </p>
-            </li>
+            <li><a href="#itc">ITC - Tec de Monterrey</a></li>
+            <li><a href="#high-school">High School</a></li>
+            <li><a href="#scholarship-service">Scholarship Service</a></li>
+            <li><a href="#middle-school">Middle School</a></li>
+            <li><a href="#elementary">Elementary</a></li>
         </ul>
+    </nav>
+
+    <section class="experiencia-section">
+        <div class="experiencia-header">
+            <h1>Education</h1>
+            <p>My academic journey and professional training</p>
+        </div>
+
+        <div class="experiencia-timeline">
+            <div class="exp-card" id="itc">
+                <div class="exp-date">2023 - 2027 (Current)</div>
+                <div class="exp-content">
+                    <h3>B.S. in Computer Technologies Engineering</h3>
+                    <p class="exp-company">Tecnológico de Monterrey</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Academic Talent Scholarship</span>
+                        <span class="exp-tag">GPA: 9.6/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Currently pursuing a Bachelor of Science in Computer Technologies Engineering with academic excellence scholarship.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="high-school">
+                <div class="exp-date">2021 - 2023</div>
+                <div class="exp-content">
+                    <h3>High School</h3>
+                    <p class="exp-company">Tecnológico de Monterrey</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Academic Talent Scholarship</span>
+                        <span class="exp-tag">GPA: 9.6/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Excellence recognition with a cumulative GPA of 9.6 / 10. High school completed at Tecnológico de Monterrey with academic excellence scholarship.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="scholarship-service">
+                <div class="exp-date">October 2023</div>
+                <div class="exp-content">
+                    <h3>Scholarship Service Project</h3>
+                    <p class="exp-company">Tecnológico de Monterrey</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Research</span>
+                        <span class="exp-tag">Data Analysis</span>
+                        <span class="exp-tag">Study Methods</span>
+                    </div>
+                    <p class="exp-description">
+                        I created and developed a proposal focused on note-taking within Tecnológico de Monterrey institutions
+                        to help students perform better in different areas. I conducted a series of surveys with 50
+                        people over 4 months to observe the results and apply different note-taking methods,
+                        such as the Cornell method, diagrams, abbreviations, etc. It was observed that the implementation of these methods helped
+                        students in more advanced semesters study fewer hours per week.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="middle-school">
+                <div class="exp-date">2017 - 2021</div>
+                <div class="exp-content">
+                    <h3>Middle School</h3>
+                    <p class="exp-company">La Salle de Seglares</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">GPA: 9.7/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Cumulative GPA of 9.7 / 10 throughout the three years of middle school.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="elementary">
+                <div class="exp-date">2011 - 2017</div>
+                <div class="exp-content">
+                    <h3>Elementary School</h3>
+                    <p class="exp-company">La Salle de Seglares</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">GPA: 9.3/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Cumulative GPA of 9.3 / 10 throughout the six years of elementary school.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

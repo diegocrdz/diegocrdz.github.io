@@ -1,13 +1,11 @@
 .header {
     font-family: 'Work Sans', sans-serif;
-    top: 0;
+    top: 1em;
     left: 0;
     position: fixed;
     height: 8vh;
     width: 100%;
     display: flex;
-    background-color: var(--header-bg-color);
-    border-bottom:#5a5a5a 2px solid;
     z-index: 99;
     transition: 0.2s;
     box-sizing: border-box;
@@ -26,6 +24,13 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
 }
 
 .content-header {
+    padding: 2em;
+    border: 2px solid #636363;
+    background-color: var(--header-bg-color);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.878);
     display: flex;
     height: auto;
     width: 100%;
@@ -33,6 +38,7 @@ body:not(.dark-mode):not(.light-mode) #dark_mode {
     align-items: center;
     margin-left: 15%;
     margin-right: 15%;
+    transition: border-color 0.2s;
 }
 
 .header .logo {
@@ -132,16 +138,17 @@ footer a:hover {
     }
 
     .header nav ul {
+        background-color: var(--cv-secondary-color);
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
         top: 8vh;
-        gap: 40px;
+        gap: 3em;
         left: 0;
         margin: 0;
         box-sizing: border-box;
-        background-color: var(--header-bg-color);
         position: absolute;
         max-height: 0;
         overflow: hidden;
@@ -149,7 +156,7 @@ footer a:hover {
     }
     .header nav ul.active {
         max-height: 100vh;
-        border-bottom: 2px solid #5a5a5a;
+        border: 2px solid #5a5a5a;
         padding: 5%;
         z-index: 10;
     }

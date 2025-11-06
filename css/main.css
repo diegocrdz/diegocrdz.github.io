@@ -31,7 +31,8 @@ body {
     background-color: #202020;
     color: white;
 
-    --header-bg-color: #313131;
+    --card-color: #313131;
+    --header-bg-color: rgba(0, 0, 0, 0.8);
     --header-logo-color: white;
     --header-unselected-color: #c2c2c2;
     --header-selected-color: white;
@@ -39,14 +40,15 @@ body {
     --cv-secondary-color: black;
 
     --about-me-bg-color: radial-gradient(circle at 50% -20%, rgba(0, 255, 247, 0.28) 0%, rgba(0, 128, 255, 0.2) 40%, rgba(22,22,22,0.95) 80%);
-    --bkg-inicio: url('../media/img/bkg_dark.jpg');
+    --bkg-inicio: url('../media/img/gifbkg.gif');
 }
 
 .light-mode {
     background-color: #e2e2e2;
     color: black;
 
-    --header-bg-color: #f0f0f0;
+    --card-color: #f0f0f0;
+    --header-bg-color: rgba(255, 255, 255, 0.8);
     --header-logo-color: black;
     --header-unselected-color: #636363;
     --header-selected-color: black;
@@ -54,5 +56,5 @@ body {
     --cv-secondary-color: white;
 
     --about-me-bg-color: linear-gradient(to top, rgba(255, 255, 255, 0.553) 10%, rgb(208, 208, 208) 40%);
-    --bkg-inicio: url('../media/img/bkg_light.jpg');
+    --bkg-inicio: url('../media/img/gifbkg.gif');
 }

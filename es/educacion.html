@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/experiencia.css">
     <!-- JavaScript -->
     <script src="../js/script.js"></script>
     <!-- Google Icons -->
@@ -20,51 +21,101 @@
 <body>
     <div id="header"></div>
 
-    <section class="titulo">
-        <h1>Educación</h1>
-    </section>
-
-    <section class="contenido" id="educacion">
+    <nav class="exp-nav">
         <ul>
-            <li>
-                Tecnológico de Monterrey - Ingeniería en Tecnologías Computacionales (Actual)
-                <p></p>
-                <strong>Beca de Talento Académico</strong>
-                <p>Promedio: 9.6 / 10</p>
-            </li>
-            <li>
-                Tecnológico de Monterrey - Bachillerato (2023-2027)
-                <p></p>
-                <strong>Beca de Talento Académico</strong>
-                <p>
-                    Reconocimiento de excelencia con un promedio acumulado de 9.6 / 10
-                </p>
-            </li>
-            <li>
-                Proyecto de Servicio Becario - (Octubre 2023)
-                <p>
-                    Cree y desarrollé una propuesta enfocada a la toma de apuntes dentro de las instituciones del Tecnológico de Monterrey
-                    con el fin de apoyar a los estudiantes a desempeñarse mejor en distintas áreas. Realicé una serie de encuestas a 50
-                    personas durante el transcurso de 4 meses para observar los resultados y aplicar diferentes métodos de toma de apuntes,
-                    como fueron los métodos Cornell, diagramas, abreviaturas, etc. Se observó que la implementación de estos métodos ayudó
-                    a los alumnos de semestres más avanzados a estudiar menos horas a la semana.
-                </p>
-            </li>
-            <li>
-                La Salle de Seglares - Secundaria (2017-2021)
-                <p></p>
-                <p>
-                    Promedio acumulado de 9.7 / 10
-                </p>
-            </li>
-            <li>
-                La Salle de Seglares - Primaria (2011-2017)
-                <p></p>
-                <p>
-                    Promedio acumulado de 9.3 / 10
-                </p>
-            </li>
+            <li><a href="#itc">ITC - Tec de Monterrey</a></li>
+            <li><a href="#bachillerato">Bachillerato</a></li>
+            <li><a href="#servicio-becario">Servicio Becario</a></li>
+            <li><a href="#secundaria">Secundaria</a></li>
+            <li><a href="#primaria">Primaria</a></li>
         </ul>
+    </nav>
+
+    <section class="experiencia-section">
+        <div class="experiencia-header">
+            <h1>Educación</h1>
+            <p>Mi trayectoria académica y formación profesional</p>
+        </div>
+
+        <div class="experiencia-timeline">
+            <div class="exp-card" id="itc">
+                <div class="exp-date">2023 - 2027 (Actual)</div>
+                <div class="exp-content">
+                    <h3>Ingeniería en Tecnologías Computacionales</h3>
+                    <p class="exp-company">Tecnológico de Monterrey</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Beca de Talento Académico</span>
+                        <span class="exp-tag">Promedio: 9.6/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Actualmente cursando la carrera de Ingeniería en Tecnologías Computacionales con beca de excelencia académica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="bachillerato">
+                <div class="exp-date">2021 - 2023</div>
+                <div class="exp-content">
+                    <h3>Bachillerato</h3>
+                    <p class="exp-company">Tecnológico de Monterrey</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Beca de Talento Académico</span>
+                        <span class="exp-tag">Promedio: 9.6/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Reconocimiento de excelencia con un promedio acumulado de 9.6 / 10. Bachillerato cursado en el Tecnológico de Monterrey con beca de excelencia académica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="servicio-becario">
+                <div class="exp-date">Octubre 2023</div>
+                <div class="exp-content">
+                    <h3>Proyecto de Servicio Becario</h3>
+                    <p class="exp-company">Tecnológico de Monterrey</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Investigación</span>
+                        <span class="exp-tag">Análisis de datos</span>
+                        <span class="exp-tag">Métodos de estudio</span>
+                    </div>
+                    <p class="exp-description">
+                        Creé y desarrollé una propuesta enfocada a la toma de apuntes dentro de las instituciones del Tecnológico de Monterrey
+                        con el fin de apoyar a los estudiantes a desempeñarse mejor en distintas áreas. Realicé una serie de encuestas a 50
+                        personas durante el transcurso de 4 meses para observar los resultados y aplicar diferentes métodos de toma de apuntes,
+                        como fueron los métodos Cornell, diagramas, abreviaturas, etc. Se observó que la implementación de estos métodos ayudó
+                        a los alumnos de semestres más avanzados a estudiar menos horas a la semana.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="secundaria">
+                <div class="exp-date">2017 - 2021</div>
+                <div class="exp-content">
+                    <h3>Secundaria</h3>
+                    <p class="exp-company">La Salle de Seglares</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Promedio: 9.7/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Promedio acumulado de 9.7 / 10 durante los tres años de secundaria.
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-card" id="primaria">
+                <div class="exp-date">2011 - 2017</div>
+                <div class="exp-content">
+                    <h3>Primaria</h3>
+                    <p class="exp-company">La Salle de Seglares</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Promedio: 9.3/10</span>
+                    </div>
+                    <p class="exp-description">
+                        Promedio acumulado de 9.3 / 10 durante los seis años de primaria.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

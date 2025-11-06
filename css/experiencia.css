@@ -1,14 +1,229 @@
-/* Sebas Night Runner Button */
-.btn-snr {
-    background-color: #685185;
-    color: black;
-    text-decoration: none;
-    border: 2px solid black;
-    padding: 10px;
-    cursor: pointer;
-    transition-duration: 0.2s;
+/* Navigation */
+.exp-nav {
+    position: fixed;
+    left: 2%;
+    top: 120px;
+    width: 200px;
 }
-.btn-snr:hover {
-    background-color: #c488b6;
-    transition-duration: 0.2s;
+
+.exp-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exp-nav ul li {
+    margin: 0.5em 0;
+}
+
+.exp-nav ul li a {
+    color: var(--header-unselected-color);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.exp-nav ul li a:hover {
+    color: var(--cv-primary-color);
+}
+
+/* Experiencia Section */
+.experiencia-section {
+    padding: 15vh 15% 5%;
+}
+
+.experiencia-header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.experiencia-header h1 {
+    font-size: 3em;
+    margin: 0 0 0.5em 0;
+    color: var(--cv-primary-color);
+}
+
+.experiencia-header p {
+    font-size: 1.2em;
+    color: var(--header-unselected-color);
+    margin: 0;
+}
+
+.experiencia-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    margin: 0 auto;
+}
+
+.exp-card {
+    background-color: var(--card-color);
+    border: 2px solid var(--header-unselected-color);
+    border-radius: 12px;
+    padding: 2em;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border 0.18s ease;
+    scroll-margin-top: 100px;
+}
+
+.exp-card:hover {
+    border: 2px solid var(--header-selected-color);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.6);
+}
+
+.exp-date {
+    display: inline-block;
+    background: var(--cv-primary-color);
+    color: var(--cv-secondary-color);
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.exp-content h3 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.8em;
+    color: var(--cv-primary-color);
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 0 0 1em 0;
+    user-select: none;
+}
+
+.exp-tag {
+    display: inline-block;
+    background: rgba(99, 99, 99, 0.2);
+    color: var(--cv-primary-color);
+    padding: 0.4em 0.9em;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 500;
+    border: 1px solid rgba(99, 99, 99, 0.3);
+    transition: all 0.2s ease;
+}
+
+.exp-tag:hover {
+    background: var(--cv-primary-color);
+    color: var(--cv-secondary-color);
+    border-color: var(--cv-primary-color);
+}
+
+.exp-company {
+    color: var(--header-selected-color);
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 0 0 0.5em 0;
+}
+
+.exp-description {
+    color: var(--header-unselected-color);
+    line-height: 1.6;
+    margin: 0 0 1em 0;
+}
+
+.exp-tech {
+    color: var(--cv-primary-color);
+    margin: 0.5em 0 1em 0;
+}
+
+.exp-links {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+
+.exp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--cv-primary-color);
+    text-decoration: none;
+    border: 2px solid var(--cv-primary-color);
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.exp-link:hover {
+    background-color: var(--cv-primary-color);
+    color: var(--cv-secondary-color);
+}
+
+.exp-image {
+    margin-top: 1.5em;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--header-unselected-color);
+}
+
+.exp-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.exp-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.exp-image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--header-unselected-color);
+}
+
+.exp-video {
+    margin-top: 1.5em;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--header-unselected-color);
+}
+
+.exp-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .exp-nav {
+        display: none;
+    }
+
+    .experiencia-section {
+        padding: 15vh 5% 5%;
+        margin-left: 0;
+    }
+
+    .experiencia-header h1 {
+        font-size: 2em;
+    }
+
+    .experiencia-header p {
+        font-size: 1em;
+    }
+
+    .exp-content h3 {
+        font-size: 1.4em;
+    }
+
+    .exp-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-links {
+        flex-direction: column;
+    }
 }

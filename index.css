@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #0a0a0a 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.name-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.language-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lang-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 160px;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.lang-btn:active {
+    transform: translateY(-2px);
+}
+
+.flag {
+    font-size: 1.6rem;
+}
+
+.lang-text {
+    flex: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .name-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .language-section {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .lang-btn {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .name-section h1 {
+        font-size: 2rem;
+    }
+
+    .lang-btn {
+        font-size: 1.1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .flag {
+        font-size: 1.5rem;
+    }
+}

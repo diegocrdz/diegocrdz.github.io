@@ -2,16 +2,12 @@
 
 ---
 
-# Bienvenido a mi Página Oficial
-# :arrow_right:[diegocrdz.github.io/es](https://diegocrdz.github.io/es):arrow_left:
+## :globe_with_meridians: Visit Site
 
-# Welcome to my official Web Page
-# :arrow_right:[diegocrdz.github.io/en](https://diegocrdz.github.io/en):arrow_left:
+### :arrow_right: [diegocrdz.github.io/en](https://diegocrdz.github.io/en) :arrow_left:
 
 ---
 
-## Contact info
+## :file_folder: About This Repository
 
-:office_worker: Diego Córdova Rodríguez
-
-:envelope: diegocordova.rdz@gmail.com
+This repository hosts the source code for my personal website, built with GitHub Pages.

@@ -4,7 +4,7 @@
 
 ## :globe_with_meridians: Visit Site
 
-### :arrow_right: [diegocrdz.github.io/en](https://diegocrdz.github.io) :arrow_left:
+### :arrow_right: [diegocrdz.github.io](https://diegocrdz.github.io) :arrow_left:
 
 ---
 

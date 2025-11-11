@@ -160,7 +160,6 @@ body.light-mode #inicio-btns .logo-btn:hover img {
 }
 #img-inicio:hover {
     transform: scale(1.01);
-    cursor: pointer;
 }
 #img-inicio:active {
     transform: scale(0.99);

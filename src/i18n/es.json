@@ -1,6 +1,159 @@
 {
-    "hero.role": "Ingeniería en Tecnologías Computacionales",
-    "hero.bio": "Tu biografía aquí.",
-    "hero.github": "https://github.com/username",
-    "hero.linkedin": "https://linkedin.com/in/username"
+    "profile": {
+        "name": "Diego Córdova Rodríguez"
+    },
+    "hero": {
+        "intro": "Hola, soy Diego",
+        "role": "Estudiante de Ingeniería en Tecnologías Computacionales · Tec de Monterrey",
+        "bio": "Tu biografía aquí.",
+        "github": "https://github.com/username",
+        "linkedin": "https://linkedin.com/in/username"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "content": "Tu contenido de acerca de mí aquí.",
+        "cta": "Conoce Más",
+        "p1": "Soy estudiante de Ingeniería en Tecnologías Computacionales con pasión por construir proyectos con impacto y aprender nuevas tecnologías. Tengo experiencia en desarrollo full-stack, machine learning y desarrollo de videojuegos, y siempre busco oportunidades para crecer y colaborar en proyectos emocionantes.",
+        "p2": "En mi tiempo libre, disfruto trabajar en proyectos personales que me permiten aplicar lo aprendido de formas creativas. Me interesa especialmente cómo la IA puede usarse para resolver problemas del mundo real y crear soluciones innovadoras. También tengo fuertes intereses en música, diseño gráfico y videojuegos, lo que frecuentemente inspira mi enfoque al desarrollo de software.",
+        "timelineTitle": "Experiencia y Educación",
+        "timeline": [
+            {
+                "year": "2023 - 2027",
+                "title": "Ingeniería en Tecnologías Computacionales en Tec de Monterrey",
+                "description": "Cursando la carrera de Ingeniería en Tecnologías Computacionales, con enfoque en desarrollo de software, machine learning y análisis de datos."
+            },
+            {
+                "year": "2021 - 2023",
+                "title": "Preparatoria en Tec de Monterrey, Campus Santa Fe",
+                "description": "Reconocimiento de excelencia con promedio acumulado de 9.6 / 10. Preparatoria completada en el Tecnológico de Monterrey con beca de excelencia académica."
+            },
+            {
+                "year": "2017 - 2021",
+                "title": "Secundaria en La Salle de Seglares",
+                "description": "Promedio acumulado de 9.7 / 10 a lo largo de los tres años de secundaria."
+            },
+            {
+                "year": "2011 - 2017",
+                "title": "Primaria en La Salle de Seglares",
+                "description": "Promedio acumulado de 9.3 / 10 a lo largo de los seis años de primaria."
+            }
+        ]
+    },
+    "resume": {
+        "cta": "CV",
+        "link": "/cv/CV_ES_Diego_Cordova_Rodriguez.pdf"
+    },
+    "featured": {
+        "title": "Proyectos Destacados",
+        "action": "Ver Proyecto",
+        "viewAll": "Ver Todos"
+    },
+    "pages": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "projects": {
+            "title": "Proyectos",
+            "summary": "Resumen",
+            "methodology": "Metodología",
+            "results": "Resultados",
+            "year": "Año",
+            "stack": "Herramientas",
+            "gallery": "Galería"
+        },
+        "contact": {
+            "title": "Contacto",
+            "form": {
+                "title": "Ponte en Contacto",
+                "name": "Nombre",
+                "namePlaceholder": "Tu nombre",
+                "email": "Correo electrónico",
+                "emailPlaceholder": "tu_correo@gmail.com",
+                "message": "Mensaje",
+                "messagePlaceholder": "Tu mensaje",
+                "submit": "Enviar Mensaje"
+            }
+        }
+    },
+    "gallery": {
+        "viewMore": "Ver más"
+    },
+    "projects": {
+        "dittravel": {
+            "title": "Dittravel",
+            "description": "Aplicación web para gestión de viajes, desde la creación de solicitudes hasta su aprobación y control administrativo completo.",
+            "summary": "Este proyecto se enfocó en dar continuidad a lo desarrollado por la generación anterior de estudiantes. El objetivo fue agregar métodos de rendición de cuentas, tipos de cambio automáticos, servicios de agencias de viaje e integración completa con los sistemas SAP de Ditta Consulting. Esto permitió añadir funcionalidades como soporte móvil, multitenencia, configuraciones de accesibilidad y más.",
+            "methodology": "El proyecto se desarrolló con metodología Scrum, con sprints de 1 semana y reuniones periódicas con el cliente para asegurar el cumplimiento de sus necesidades. Se utilizaron herramientas como GitHub para control de versiones y gestión del proyecto, además de sesiones de pruebas con usuarios para recopilar retroalimentación y mejorar la experiencia.",
+            "result": "El proyecto fue entregado exitosamente al cliente. Las sesiones de pruebas con usuarios mostraron que el 80% calificó el sistema como excelente, destacando la facilidad de uso y la amplitud de funcionalidades."
+        },
+        "next-buy-predictor": {
+            "title": "Banamex - Next Buy Predictor",
+            "description": "Modelo de machine learning para predecir la próxima compra de un usuario basándose en su historial de transacciones.",
+            "summary": "Desarrollado durante el Hackathon de IA Banamex × Tec de Monterrey, este sistema impulsado por IA predice qué categorías de compra son más probables para cada cliente, cuándo realizará la compra y qué oportunidades de venta cruzada son más relevantes. Los usuarios acceden a un dashboard con predicciones por categoría junto con ventanas de tiempo sugeridas para activar promociones.",
+            "methodology": "El pipeline combinó cuatro modelos complementarios: BERT4Rec (arquitectura Transformer) para capturar patrones de compra a largo plazo, una red neuronal recurrente GRU para modelar el comportamiento reciente, Gradient Boosting/XGBoost para rankear recomendaciones por relevancia comercial, y mapas de calor basados en embeddings para detectar oportunidades de venta cruzada automática entre categorías relacionadas como Viajes, Salud y Entretenimiento. El backend se construyó en Python y Flask, con un dashboard en React + Vite que visualiza resultados mediante Chart.js.",
+            "result": "El modelo alcanzó un Hit@5 de 81% y un Hit@10 de 95%, con un NDCG@10 de 64%. Más allá de las métricas, el proyecto estimó un impacto potencial de aproximadamente $6.7M MXN si se capturara un 10% más de gasto en la categoría objetivo dentro de la muestra analizada."
+        },
+        "petroindustria-client-system": {
+            "title": "Petroindustria - Sistema para Clientes",
+            "description": "Aplicación web que permite a los clientes de Petroindustria acceder y descargar documentos de forma segura.",
+            "summary": "El objetivo fue crear una aplicación web que permitiera a los clientes de Petroindustria acceder fácilmente a documentos relevantes. El sistema se diseñó con enfoque en seguridad y control administrativo, permitiendo a la empresa gestionar el acceso de usuarios de manera efectiva.",
+            "methodology": "El proyecto se desarrolló en un mes con comunicación directa con Petroindustria. El frontend se construyó con React + Next.js y el backend con TypeScript y Express. La base de datos se implementó con Supabase, lo que facilitó la gestión de autenticación y almacenamiento de documentos.",
+            "result": "El proyecto fue entregado exitosamente y actualmente es utilizado por los clientes de Petroindustria para acceder a sus documentos."
+        },
+        "multi-agent-simulation": {
+            "title": "Simulación Multi-Agente de Tráfico",
+            "description": "Simulación de tráfico construida con WebGL y Mesa para mejorar la toma de decisiones en tiempo real de los vehículos.",
+            "summary": "Este proyecto simula el tráfico urbano como un sistema multi-agente donde cada vehículo toma decisiones independientes en tiempo real para navegar por la ciudad minimizando la congestión. La simulación modela el tráfico cotidiano junto con escenarios de emergencia.",
+            "methodology": "Cada agente vehículo sigue una arquitectura de decisiones basada en máquinas de estado que prioriza seguridad, cumplimiento de objetivos y manejo de emergencias. Cuando un agente se bloquea, un contador de 'paciencia' activa el recalculo de ruta automáticamente. Se implementaron ambulancias con un estado de emergencia dedicado que ignora semáforos para llegar a hospitales lo más rápido posible.",
+            "result": "La simulación demostró cómo el comportamiento descentralizado basado en reglas puede reducir bloqueos viales y adaptarse a situaciones de emergencia sin control centralizado del tráfico."
+        },
+        "emergency-registration-system": {
+            "title": "Sistema de Registro de Emergencias (ERS)",
+            "description": "Aplicación web para la gestión de reportes de emergencia para la Secretaría de Gestión Integral de Riesgos y Protección Civil.",
+            "summary": "Desarrollado para el Ayuntamiento de Cuajimalpa, este sistema optimiza la recolección, revisión y gestión de reportes de emergencia por parte del personal de protección civil. El proyecto cubrió el ciclo completo de desarrollo en 10 semanas, logrando un aumento del 50% en la eficiencia de llenado de reportes.",
+            "methodology": "Construido con React-Admin en el frontend y MongoDB como base de datos. Incluyó funcionalidades de accesibilidad web y filtros avanzados en los paneles de estadísticas y administración, lo que permitió a los administradores segmentar datos por tipo de reporte, ubicación y estado, aumentando la eficiencia administrativa en un 70%.",
+            "result": "El equipo presentó la aplicación directamente ante el Ayuntamiento de Cuajimalpa y obtuvo el 1er lugar entre 10 equipos participantes."
+        },
+        "overclocked": {
+            "title": "Overclocked",
+            "description": "Videojuego roguelite 2D enfocado en competencia y optimización, desarrollado de principio a fin incluyendo diseño de juego, programación, interfaz web y base de datos.",
+            "summary": "Overclocked es un roguelite 2D construido alrededor de la competencia intensa, donde los jugadores optimizan sus partidas contra desafíos cambiantes. El proyecto cubrió el ciclo completo de desarrollo, desde las mecánicas centrales de juego hasta una plataforma web complementaria.",
+            "methodology": "El desarrollo abarcó tanto el juego como sus sistemas de soporte: programación del loop central y mecánicas roguelite, diseño de la interfaz web y construcción de la capa de base de datos. El proyecto fue un esfuerzo full-stack.",
+            "result": "El juego y su interfaz web fueron desarrollados completamente, demostrando la capacidad de llevar un videojuego desde el concepto hasta un producto jugable y desplegado."
+        },
+        "real-time-translation": {
+            "title": "RSec - Traducción en Tiempo Real con IA",
+            "description": "Sistema de traducción en tiempo real impulsado por IA, desarrollado durante una pasantía en RSec para traducir conversaciones en reuniones virtuales.",
+            "summary": "Desarrollado durante una pasantía de 3 meses en RSec, este proyecto exploró cómo los modelos de IA pueden aplicarse para traducir conversaciones habladas en tiempo real durante reuniones virtuales, eliminando barreras lingüísticas en la colaboración entre idiomas.",
+            "methodology": "El sistema combinó modelos de traducción con IA con un backend en Express.js para procesar y transmitir audio/texto de conversaciones en sesiones en vivo con Python, enfocándose en minimizar la latencia para que las traducciones siguieran el ritmo de la conversación natural.",
+            "result": "La pasantía resultó en un prototipo funcional que demuestra la traducción asistida por IA en tiempo real."
+        },
+        "cybersecurity-library": {
+            "title": "RSec - Librería de Ciberseguridad",
+            "description": "Programa de formación completado en RSec, empresa multinacional de ciberseguridad, cubriendo dominios clave como análisis de riesgos, cumplimiento normativo y forensia digital.",
+            "summary": "Como parte del programa de incorporación de RSec para nuevo talento en ciberseguridad, esta formación proporcionó una introducción estructurada al campo, combinando fundamentos teóricos con práctica en múltiples dominios de seguridad.",
+            "methodology": "El programa cubrió principios de seguridad de datos, metodologías de análisis de riesgos y marcos de cumplimiento normativo incluyendo ISO, NIST y regulaciones NYCE. Las sesiones prácticas incluyeron ejercicios de forensia digital y trabajo con máquinas virtuales con Kali Linux.",
+            "result": "Completar la formación construyó una base sólida en fundamentos de ciberseguridad y marcos regulatorios, junto con experiencia práctica usando herramientas estándar de la industria como Kali Linux para análisis forense."
+        },
+        "solar-panel-cleaning": {
+            "title": "Limpieza de Paneles Solares mediante Campos Eléctricos",
+            "description": "Simulación en MATLAB que modela la limpieza de paneles solares mediante campos eléctricos, con el objetivo de reducir el consumo de agua en el mantenimiento. Ganador del 3er lugar en Expo Ingenierías 3ra edición.",
+            "summary": "Este proyecto exploró una alternativa a la limpieza tradicional de paneles solares con agua, simulando cómo los campos eléctricos podrían usarse para remover polvo y residuos de las superficies, abordando el desperdicio significativo de agua en los métodos convencionales de mantenimiento.",
+            "methodology": "El proceso de limpieza fue modelado y simulado en MATLAB, analizando cómo los campos eléctricos pueden aplicarse para desprender partículas sin depender del agua. La simulación permitió probar diferentes configuraciones de campo y parámetros para evaluar la efectividad de la limpieza.",
+            "result": "El proyecto obtuvo el 3er lugar en la 3ra edición de Expo Ingenierías en el Tecnológico de Monterrey, Campus Santa Fe."
+        },
+        "microsoft-basics-course": {
+            "title": "Microsoft - Curso Básico de Herramientas Computacionales",
+            "description": "Programa de servicio social en el Centro de Aprendizaje Comunitario del Tec de Monterrey, Campus Santa Fe, enseñando herramientas básicas de Microsoft y programación en Python a beneficiarios de la comunidad.",
+            "summary": "Como parte de un programa obligatorio de servicio social en colaboración con Microsoft México, esta iniciativa brindó formación en alfabetización digital a beneficiarios de la comunidad a través del Centro de Aprendizaje Comunitario del Tec de Monterrey, Campus Santa Fe.",
+            "methodology": "Durante el programa se diseñaron e impartieron clases de Word, Excel, PowerPoint y Teams, junto con una introducción a la programación en Python, adaptando el ritmo y contenido a las necesidades y experiencia previa de 2 beneficiarios.",
+            "result": "Los beneficiarios completaron el curso con familiaridad práctica con las herramientas principales de Microsoft y conceptos básicos de programación."
+        },
+        "sebas-night-runner": {
+            "title": "Sebas Night Runner",
+            "description": "Videojuego runner 2D desarrollado en C# con Unity, enfocado en progresión por puntaje y personajes y niveles desbloqueables.",
+            "summary": "Sebas Night Runner es un juego endless runner 2D donde los jugadores persiguen puntajes altos y recolectan monedas para desbloquear nuevos personajes y niveles, combinando jugabilidad simple y adictiva con mecánicas de progresión.",
+            "methodology": "Desarrollado en C# con Unity, el proyecto cubrió tanto los aspectos técnicos como creativos del desarrollo de videojuegos de principio a fin, incluyendo programación del gameplay, diseño de personajes y niveles, y las animaciones que dan vida a las mecánicas del runner.",
+            "result": "El juego fue completamente desarrollado y publicado, demostrando la capacidad de manejar de forma independiente tanto la ingeniería como el diseño creativo de un videojuego jugable."
+        }
+    }
 }

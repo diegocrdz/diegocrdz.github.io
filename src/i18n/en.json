@@ -1,6 +1,159 @@
 {
-    "hero.role": "B.S. in Computer Science and Technology",
-    "hero.bio": "Your bio here.",
-    "hero.github": "https://github.com/username",
-    "hero.linkedin": "https://linkedin.com/in/username"
+    "profile": {
+        "name": "Diego Cordova Rodriguez"
+    },
+    "hero": {
+        "intro": "Hi, I'm Diego",
+        "role": "Student of B.S. in Computer Science and Technology · Tec de Monterrey",
+        "bio": "Your bio here.",
+        "github": "https://github.com/username",
+        "linkedin": "https://linkedin.com/in/username"
+    },
+    "about": {
+        "title": "About Me",
+        "content": "Your about me content here. You can talk about your background, interests, and what you're passionate about in tech.",
+        "cta": "Learn More",
+        "p1": "I'm a B.S. in Computer Science and Technology student with a passion for building impactful projects and learning new technologies. I have experience in full-stack development, machine learning, and game development, and I'm always looking for opportunities to grow and collaborate on exciting projects.",
+        "p2": "In my free time, I enjoy working on personal projects that allow me to apply what I've learned in creative ways. I'm particularly interested in how AI can be used to solve real-world problems and create innovative solutions. I also have strong interests in music, graphic design, and video games, which often inspire my approach to software development.",
+        "timelineTitle": "Experience & Education",
+        "timeline": [
+            {
+                "year": "2023 - 2027",
+                "title": "B.S. in Computer Science and Technology at Tec de Monterrey",
+                "description": "Pursuing a degree in Computer Science and Technology, focusing on software development, machine learning, and data analysis."
+            },
+            {
+                "year": "2021 - 2023",
+                "title": "High School at Tec de Monterrey, Santa Fe Campus",
+                "description": "Excellence recognition with a cumulative GPA of 9.6 / 10. High school completed at Tecnológico de Monterrey with academic excellence scholarship."
+            },
+            {
+                "year": "2017 - 2021",
+                "title": "Middle School at La Salle de Seglares",
+                "description": "Cumulative GPA of 9.7 / 10 throughout the three years of middle school."
+            },
+            {
+                "year": "2011 - 2017",
+                "title": "Elementary School at La Salle de Seglares",
+                "description": "Cumulative GPA of 9.3 / 10 throughout the six years of elementary school."
+            }
+        ]
+    },
+    "resume": {
+        "cta": "Resume",
+        "link": "/cv/CV_EN_Diego_Cordova_Rodriguez.pdf"
+    },
+    "featured": {
+        "title": "Featured Projects",
+        "action": "View Project",
+        "viewAll": "View All"
+    },
+    "pages": {
+        "home": "Home",
+        "about": "About",
+        "projects": {
+            "title": "Projects",
+            "summary": "Summary",
+            "methodology": "Methodology",
+            "results": "Results",
+            "year": "Year",
+            "stack": "Tools",
+            "gallery": "Gallery"
+        },
+        "contact": {
+            "title": "Contact",
+            "form": {
+                "title": "Get in Touch",
+                "name": "Name",
+                "namePlaceholder": "Your name",
+                "email": "Email",
+                "emailPlaceholder": "your_email@gmail.com",
+                "message": "Message",
+                "messagePlaceholder": "Your message",
+                "submit": "Send Message"
+            }
+        }
+    },
+    "gallery": {
+        "viewMore": "View More"
+    },
+    "projects": {
+        "dittravel": {
+            "title": "Dittravel",
+            "description": "Web App for travel management, from request creation to approval and full administration control.",
+            "summary": "This project was focused on giving support on what was developed by the previous generation of students. The goal was to add accountability methods, automatic exchange rates, travel agency services, and to be able to fully integrate with the current SAP systems of Ditta Consulting. This allowed us to further develop the project and add features such as mobile support, multitenancy, accessibility settings, and more.",
+            "methodology": "The project was developed using the Scrum methodology, with 1-week sprints and regular meetings with the client to ensure that we were meeting their needs and expectations. We used tools such as GitHub for version control and project management. We also conducted user testing sessions to gather feedback and make improvements to the user experience.",
+            "result": "The project was successfully delivered to the client. User testing sessions showed 80% qualified the system as excellent, with feedback highlighting ease of use and the comprehensive features."
+        },
+        "next-buy-predictor": {
+            "title": "Banamex - Next Buy Predictor",
+            "description": "Machine learning model to predict the next purchase of a user based on their transaction history.",
+            "summary": "Built during the Banamex × Tec de Monterrey AI Hackathon, this AI-powered system predicts what customers are likely to buy next, when they'll buy it, and which cross-sell opportunities are most relevant. Users get a dashboard showing category predictions paired with suggested time windows for activating promotions, helping turn raw transaction data into clear, actionable business decisions.",
+            "methodology": "The pipeline combined four complementary models: BERT4Rec (a Transformer architecture) to capture long-term purchasing patterns, a GRU recurrent neural network to model recent customer behavior, Gradient Boosting/XGBoost to rank recommendations by commercial relevance, and embedding-based heatmaps to surface automatic cross-sell opportunities across related categories such as Travel, Health, and Entertainment. The team built the backend in Python and Flask, with a React + Vite dashboard visualizing results through Chart.js.",
+            "result": "The model achieved a Hit@5 of 81% (the correct purchase category appeared within the top 5 recommendations) and a Hit@10 of 95%, with an NDCG@10 of 64%, meaning relevant recommendations consistently ranked near the top. Beyond the metrics, the project estimated a potential impact of approximately $6.7M MXN if 10% more target-category spend were captured within the analyzed sample. One of the biggest takeaways was realizing how understanding the business context and use case can create more impact than fine-tuning a model's accuracy to the last decimal point."
+        },
+        "petroindustria-client-system": {
+            "title": "Petroindustria - Client System",
+            "description": "Web App that allows Petroindustria's clients to safely access and download documents.",
+            "summary": "The objective of this project was to create a web application that would allow Petroindustria's clients to easily access relevant documents. The system was designed to be focused on security and administrative control, allowing the company to manage user access effectively.",
+            "methodology": "The project was developed over the course of one month with direct comunication with Petroindustria to ensure their needs were being met. The frontend was build with React + Next.js, while the backend was built with Typescript and Express. The database was implemented with Supabase, which allowed us to easily manage user authentication and document storage.",
+            "result": "The project was successfully delivered to the client and is now being used by Petroindustria's clients to access their documents."
+        },
+        "multi-agent-simulation": {
+            "title": "Multi-Agent Traffic Simulation",
+            "description": "Traffic simulation built with WebGL and Mesa to improve real-time decision making for vehicles.",
+            "summary": "This project simulates urban traffic as a multi-agent system, where each vehicle makes independent real-time decisions to navigate the city while minimizing congestion. The simulation models everyday traffic alongside emergency scenarios, exploring how individual agent behavior can be coordinated to improve overall road efficiency.",
+            "methodology": "Each vehicle agent follows a state-machine decision architecture that prioritizes safety, goal completion, and emergency handling. When an agent gets blocked, a 'patience' counter triggers automatic re-routing rather than letting traffic stall indefinitely. To stress-test the system, ambulances were implemented with a dedicated emergency state that ignores traffic lights to reach local hospitals as fast as possible, while regular vehicles detect and react to the emergency agents to clear the way.",
+            "result": "The simulation successfully demonstrated how decentralized, rule-based agent behavior can reduce road blockages and adapt to emergency situations without centralized traffic control. The patience-based re-routing mechanism proved effective at preventing gridlock, and the emergency vehicle scenario validated that regular agents could reliably detect and yield to higher-priority vehicles in real time."
+        },
+        "emergency-registration-system": {
+            "title": "Emergency Registration System (ERS)",
+            "description": "Web App for emergency report management for the Secretary of Integral Risk Management and Civil Protection.",
+            "summary": "Developed for Cuajimalpa City Hall, this system streamlines how emergency reports are collected, reviewed, and managed by civil protection staff. The project covered the complete development lifecycle over 10 weeks, from requirements elicitation and specification through coding, testing, and deployment, resulting in a 50% increase in report completion efficiency.",
+            "methodology": "Built with React-Admin on the frontend and MongoDB as the database, the application included web accessibility features to ensure usability across different staff members, along with advanced filtering in the statistics and administration panels. These filters enabled administrators to slice data by report type, location, and status, supporting faster, data-driven decisions and increasing administrative efficiency by 70%.",
+            "result": "The team presented the final application directly to Cuajimalpa City Hall and earned 1st place out of 10 participating teams, validating both the technical execution and the real-world impact of the system on emergency response workflows."
+        },
+        "overclocked": {
+            "title": "Overclocked",
+            "description": "2D roguelite video game focused on competition and optimization, developed end to end including game design, programming, web interface, and database.",
+            "summary": "Overclocked is a 2D roguelite built around fast-paced competition, where players optimize their runs against shifting challenges. The project covered the full game development cycle, from core gameplay mechanics to a companion web platform supporting the game's online presence.",
+            "methodology": "Development spanned both the game itself and its supporting systems: programming the core gameplay loop and roguelite mechanics, designing the web interface that accompanies the game, and building the database layer behind it. The project was carried out as a full-stack effort, balancing game design decisions with the technical implementation needed to ship a playable, deployed product.",
+            "result": "The game and its web interface were fully developed, with the project demonstrating the ability to take a video game from concept to a shipped, playable product."
+        },
+        "real-time-translation": {
+            "title": "RSec - Real Time Translation with AI",
+            "description": "AI-powered real-time translation system built during a part-time internship at RSec, designed to translate live conversations during virtual meetings.",
+            "summary": "Developed over a 3-month internship at RSec, this project explored how AI models could be applied to translate spoken conversations in real time during virtual meetings, removing language barriers for cross-language collaboration.",
+            "methodology": "The system combined AI translation models with an Express.js backend to process and relay conversation audio/text during live sessions in Python, focusing on minimizing latency so translations could keep pace with natural conversation flow.",
+            "result": "The internship resulted in a working prototype demonstrating real-time AI-assisted translation, providing hands-on experience applying AI models to a practical, latency-sensitive communication problem."
+        },
+        "cybersecurity-library": {
+            "title": "RSec - Cybersecurity Library",
+            "description": "Training program completed at RSec, a multinational cybersecurity company, covering core security domains including risk analysis, compliance, and digital forensics.",
+            "summary": "As part of RSec's onboarding program for new talent in cybersecurity, this training provided a structured introduction to the field, combining theoretical foundations with hands-on practice across multiple security domains relevant to a multinational security company.",
+            "methodology": "The program covered data security principles, risk analysis methodologies, and security compliance frameworks including ISO, NIST, and NYCE regulations. Practical sessions included digital forensics exercises and hands-on work with virtual machines running Kali Linux, exposing real-world tools used in security auditing and incident investigation.",
+            "result": "Completing the training built a solid foundation in cybersecurity fundamentals and regulatory frameworks, along with practical experience using industry-standard tools like Kali Linux for forensic analysis, an exposure to security work that complemented other personal coding projects."
+        },
+        "solar-panel-cleaning": {
+            "title": "Solar Panel Cleaning via Electric Fields",
+            "description": "MATLAB simulation modeling solar panel cleaning through electric fields, aiming to reduce water consumption in panel maintenance. Awarded 3rd place at Expo Ingenierías 3rd edition.",
+            "summary": "This project explored an alternative to traditional water-based solar panel cleaning by simulating how electric fields could be used to remove dust and debris from panel surfaces, addressing the significant water waste involved in conventional maintenance methods.",
+            "methodology": "The cleaning process was modeled and simulated in MATLAB, analyzing how electric fields could be applied to dislodge particles from panel surfaces without relying on water. The simulation allowed testing different field configurations and parameters to evaluate cleaning effectiveness before considering any physical implementation.",
+            "result": "The project earned 3rd place at the 3rd edition of Expo Ingenierías at Tecnológico de Monterrey, Santa Fe, validating the feasibility of the approach as a water-saving alternative for solar panel maintenance."
+        },
+        "microsoft-basics-course": {
+            "title": "Microsoft - Basic Computing Tools Course",
+            "description": "Social service program at the Community Learning Center, Tec de Monterrey, Santa Fe Campus, teaching basic Microsoft tools and Python programming to community beneficiaries.",
+            "summary": "As part of a mandatory social service program in collaboration with Microsoft Mexico, this initiative provided foundational digital literacy training to community beneficiaries through the Community Learning Center at Tec de Monterrey, Santa Fe Campus.",
+            "methodology": "Over the course of the program, lessons were designed and taught covering Word, Excel, PowerPoint, and Teams, along with an introduction to Python programming, adapting the pace and content to the needs and prior experience of 2 beneficiaries throughout the sessions.",
+            "result": "The beneficiaries completed the course with practical, hands-on familiarity with core Microsoft tools and basic programming concepts, reflecting both the value of accessible digital education and the experience of teaching technical content to non-technical audiences."
+        },
+        "sebas-night-runner": {
+            "title": "Sebas Night Runner",
+            "description": "2D runner-style video game built in C# with Unity, focused on score-based progression and unlockable characters and levels.",
+            "summary": "Sebas Night Runner is a 2D endless-runner game where players chase high scores and collect coins to unlock new characters and levels, blending simple, addictive gameplay with progression mechanics that reward repeated play.",
+            "methodology": "Built in C# using Unity, the project covered both the technical and creative sides of game development end to end, including gameplay programming, character and level design, and the animations bringing the runner mechanics to life.",
+            "result": "The game was fully developed and published, with the complete project demonstrating the ability to independently handle both the engineering and creative design aspects of a playable video game."
+        }
+    }
 }

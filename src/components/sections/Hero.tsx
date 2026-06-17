@@ -5,29 +5,23 @@
  */
 
 import { useTranslation } from 'react-i18next';
+import InteractiveDotGrid from '@/components/aicanvas/dot-grid';
+import { EncryptedText } from '@/components/ui/encrypted-text';
 
 const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
-      <div className="max-w-2xl w-full">
-        <img
-          src="/photo.jpg"
-          alt="Diego"
-          className="w-24 h-24 rounded-full object-cover mb-6"
+    <section className="h-[calc(100vh-3.5rem)] w-full flex items-center justify-center px-6">
+      <div className="absolute inset-0">
+        <InteractiveDotGrid showLabel={false} />
+      </div>
+      <div className="relative z-10 max-w-2xl">
+        <EncryptedText
+          text={t('hero.intro')}
+          className="text-5xl font-medium mb-2"
         />
-        <h1 className="text-4xl font-medium mb-2">Diego Córdova Rodríguez</h1>
         <p className="text-muted-foreground mb-4">{t('hero.role')}</p>
-        <p className="text-muted-foreground mb-8">{t('hero.bio')}</p>
-        <div className="flex gap-4">
-          <a href={t('hero.github')} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a href={t('hero.linkedin')} target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </div>
       </div>
     </section>
   )

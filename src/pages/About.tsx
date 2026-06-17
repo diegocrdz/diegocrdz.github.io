@@ -17,10 +17,12 @@ const About = () => {
                 <Timeline items={
                     (t('about.timeline', { returnObjects: true }) as Array<{
                         year: string
+                        location: string
                         title: string
                         description: string
                     }>).map((item) => ({
                         year: item.year,
+                        location: item.location,
                         title: item.title,
                         description: item.description}
                     ))

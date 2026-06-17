@@ -12,6 +12,7 @@ import Contact from './pages/Contact'
 import ResumeButton from '@/components/ResumeButton'
 import Projects from './pages/Projects'
 import ProjectPage from './pages/ProjectPage'
+import ScrollToTop from '@/components/ScrollToTop'
 
 function App() {
   const { t } = useTranslation();
@@ -24,6 +25,7 @@ function App() {
         {/* Top fade effect */}
         <div className="fixed top-0 left-0 right-0 h-30 bg-linear-to-b from-background to-transparent z-40 pointer-events-none" />
         <main className="pt-14">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

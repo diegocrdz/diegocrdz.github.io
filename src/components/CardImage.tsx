@@ -20,9 +20,10 @@ interface CardImageProps {
     imageUrl?: string
     number?: number
     children?: React.ReactNode
+    maxDescriptionLength?: number
 }
 
-const CardImage = ({ title, description, action, imageUrl, number, children }: CardImageProps) => {
+const CardImage = ({ title, description, action, imageUrl, number, children, maxDescriptionLength = 100 }: CardImageProps) => {
     return (
         <Card className="group relative w-full h-full pt-0 overflow-hidden">
             {/* Image */}
@@ -60,7 +61,10 @@ const CardImage = ({ title, description, action, imageUrl, number, children }: C
             </CardHeader>
             <CardContent>
                 <CardDescription>
-                    {description}
+                    {maxDescriptionLength && description.length > maxDescriptionLength
+                        ? description.slice(0, maxDescriptionLength) + '...'
+                        : description
+                    }
                 </CardDescription>
                 {children}
             </CardContent>

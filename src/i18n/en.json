@@ -18,23 +18,21 @@
         "timeline": [
             {
                 "year": "2023 - 2027",
+                "location": "Tec de Monterrey, Santa Fe Campus",
                 "title": "B.S. in Computer Science and Technology at Tec de Monterrey",
                 "description": "Pursuing a degree in Computer Science and Technology, focusing on software development, machine learning, and data analysis."
             },
             {
-                "year": "2021 - 2023",
-                "title": "High School at Tec de Monterrey, Santa Fe Campus",
-                "description": "Excellence recognition with a cumulative GPA of 9.6 / 10. High school completed at Tecnológico de Monterrey with academic excellence scholarship."
+                "year": "2026",
+                "location": "University of British Columbia",
+                "title": "Exchange Semester at UBC",
+                "description": "Participating in an exchange program at the University of British Columbia, taking courses in data science and language in the age of AI."
             },
             {
-                "year": "2017 - 2021",
-                "title": "Middle School at La Salle de Seglares",
-                "description": "Cumulative GPA of 9.7 / 10 throughout the three years of middle school."
-            },
-            {
-                "year": "2011 - 2017",
-                "title": "Elementary School at La Salle de Seglares",
-                "description": "Cumulative GPA of 9.3 / 10 throughout the six years of elementary school."
+                "year": "2024-2025",
+                "location": "RSec",
+                "title": "AI Intern at RSec",
+                "description": "Completed a part-time internship at RSec, a multinational cybersecurity company, where I worked on projects involving AI-powered real-time translation and completed a comprehensive cybersecurity training program covering risk analysis, compliance, and digital forensics."
             }
         ]
     },
@@ -74,7 +72,8 @@
         }
     },
     "gallery": {
-        "viewMore": "View More"
+        "viewMore": "View More",
+        "bottomText": "Select an image to view it in full size."
     },
     "projects": {
         "dittravel": {

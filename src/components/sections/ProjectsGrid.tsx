@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom'
 import CardImage from '@/components/CardImage'
 import { Badge } from '@/components/ui/badge'
 
+const MAX_DESCRIPTION_LENGTH = 100
+
 const ProjectsGrid = () => {
     const { t } = useTranslation()
 
@@ -21,6 +23,7 @@ const ProjectsGrid = () => {
                         description={t(`projects.${project.id}.description`)}
                         imageUrl={project.thumbnail}
                         number={projects.indexOf(project) + 1}
+                        maxDescriptionLength={MAX_DESCRIPTION_LENGTH}
                     >
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2 mt-4">

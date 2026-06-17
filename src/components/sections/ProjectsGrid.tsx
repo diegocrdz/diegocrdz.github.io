@@ -3,7 +3,7 @@
  * Used in the Projects page to show all projects in a compact format.
  */
 
-import { projects } from '@/data/Projects'
+import { projects } from '@/data/projects'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CardImage from '@/components/CardImage'

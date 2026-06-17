@@ -1,6 +1,6 @@
 const PhotoStack = () => {
   return (
-    <div className="relative w-80 h-80">
+    <div className="relative w-60 h-60 md:w-80 md:h-80">
       <div className="absolute inset-0 w-full h-full bg-muted/60 rounded-lg border border-border -rotate-6" />
       <div className="absolute inset-0 w-full h-full bg-muted/80 rounded-lg border border-border rotate-6" />
       <img

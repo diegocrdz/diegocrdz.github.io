@@ -1,8 +1,3 @@
-import Title from '@/components/Title'
-import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import {
     Field,
     FieldLabel,
@@ -11,6 +6,12 @@ import {
 import { Textarea } from '@/components/ui/textarea'
 import { Mail, ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router'
+import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import Section from '@/components/Section'
+import PageHeader from '@/components/PageHeader'
 
 const links = [
     { name: 'GitHub', href: 'https://github.com/diegocrdz', icon: <Mail /> },
@@ -31,9 +32,9 @@ const Contact = () => {
     }
     
     return (
-        <section className="max-w-4xl mx-auto px-6 py-16">
-            <Title title="pages.contact.title" />
-            <div className="flex gap-3 mb-12">
+        <Section title="pages.contact.title">
+            <PageHeader />
+            <div className="flex flex-col md:flex-row gap-3 mb-12">
                 {links.map((link) => (
                     <Button variant="outline" asChild key={link.name}>
                         <Link to={link.href} target="_blank">
@@ -79,7 +80,7 @@ const Contact = () => {
                     {t('pages.contact.form.submit')}
                 </Button>
             </FieldSet>
-        </section>
+        </Section>
     )
 }
 

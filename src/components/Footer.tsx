@@ -21,9 +21,9 @@ const Footer2 = (props: FooterProps) => {
 
   return (
     <section className={className}>
-      <div className="container mx-auto">
+      <div className="max-w-4xl mx-auto p-6">
         <footer>
-          <div className="mt-8 flex flex-col justify-between gap-4 border-t border-border p-8 text-xs font-medium text-muted-foreground md:flex-row md:items-center">
+          <div className="my-8 flex flex-col justify-between gap-4 border-t border-border py-8 text-xs font-medium text-muted-foreground md:flex-row md:items-center">
             <p>{copyright}</p>
             <ul className="flex gap-4">
               {legalLinks?.map((link, linkIdx) => (

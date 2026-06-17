@@ -9,7 +9,6 @@ import Footer2 from '@/components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import ResumeButton from '@/components/ResumeButton'
 import Projects from './pages/Projects'
 import ProjectPage from './pages/ProjectPage'
 import ScrollToTop from '@/components/ScrollToTop'
@@ -20,11 +19,10 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <TooltipProvider>
-        <Navbar />
-        <ResumeButton />
+        <Navbar />          
         {/* Top fade effect */}
         <div className="fixed top-0 left-0 right-0 h-30 bg-linear-to-b from-background to-transparent z-40 pointer-events-none" />
-        <main className="pt-14">
+        <main>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />

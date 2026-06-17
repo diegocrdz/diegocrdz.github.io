@@ -88,7 +88,7 @@ const Gallery = ({ images }: { images: string[] }) => {
             </Carousel>
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent
-                    className="w-auto max-w-[90vw]! p-0 rounded-xl overflow-hidden bg-transparent ring-0"
+                    className="w-auto max-w-[100vw]! p-0 rounded-xl overflow-hidden bg-transparent ring-0"
                     showCloseButton={false}
                 >
                     <div className="flex flex-col items-center gap-2">
@@ -103,7 +103,7 @@ const Gallery = ({ images }: { images: string[] }) => {
                         <img
                             src={images[activeIndex]}
                             alt={`Project image ${activeIndex + 1}`}
-                            className="max-h-[70vh] max-w-[80vw] md:min-h-[70vh] object-contain"
+                            className="max-h-[70vh] max-w-[100vw] md:min-h-[70vh] object-contain"
                         />
 
                         {images.length > 1 && (

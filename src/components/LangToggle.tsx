@@ -20,7 +20,7 @@ const LangToggle = () => {
           <span className="sr-only">Toggle language</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="center">
         <DropdownMenuItem onClick={() => i18n.changeLanguage('en')}>
           <Check className={i18n.language === 'en' ? 'opacity-100' : 'opacity-0'} />
           English

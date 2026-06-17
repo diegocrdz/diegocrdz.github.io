@@ -12,18 +12,20 @@ const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="h-[calc(100vh-3.5rem)] w-full flex items-center justify-center px-6">
+    <div className="h-screen w-screen flex items-center justify-center p-6">
       <div className="absolute inset-0">
         <InteractiveDotGrid showLabel={false} />
       </div>
-      <div className="relative z-10 max-w-2xl">
+      <div className="relative flex flex-col gap-4 z-10">
         <EncryptedText
           text={t('hero.intro')}
-          className="text-5xl font-medium mb-2"
+          className="text-4xl font-medium"
         />
-        <p className="text-muted-foreground mb-4">{t('hero.role')}</p>
+        <p className="text-muted-foreground">
+          {t('hero.role')}
+        </p>
       </div>
-    </section>
+    </div>
   )
 }
 

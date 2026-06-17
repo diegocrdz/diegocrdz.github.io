@@ -7,9 +7,9 @@ const BackButton = ({ text, to, className }: { text?: string, to: string, classN
 
     return (
         <Button
-            variant="link"
+            variant="ghost"
             size="sm"
-            className={className}
+            className={`h-10 border border-border rounded-full bg-background/50 backdrop-blur-sm ${className}`}
             onClick={() => navigate(to)}
         >
             <ArrowLeft />

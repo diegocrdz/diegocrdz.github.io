@@ -13,9 +13,8 @@ import { Button } from '@/components/ui/button'
 import { projects } from '@/data/projects'
 import { ArrowUpRight, ArrowLeft, ArrowRight } from 'lucide-react'
 import Gallery from '@/components/Gallery'
-import BackButton from '@/components/BackButton'
-
-import Title from '@/components/Title'
+import Section from '@/components/Section'
+import PageHeader from '@/components/PageHeader'
 
 const DataSection = ({ title, children }: { title: string, children: React.ReactNode }) => (
     <div className="text-sm mb-4">
@@ -26,7 +25,7 @@ const DataSection = ({ title, children }: { title: string, children: React.React
     </div>
 )
 
-const Section = ({ title, text, children }: { title: string, text?: string, children?: React.ReactNode }) => (
+const Content = ({ title, text, children }: { title: string, text?: string, children?: React.ReactNode }) => (
     <div className="flex flex-col gap-4">
         <h2 className="text-2xl font-medium">
             {title}
@@ -61,14 +60,13 @@ const ProjectPage = () => {
     }
 
     return (
-        <section className="max-w-4xl mx-auto px-6 py-16">
-            <BackButton text={t('pages.projects.title')} to="/projects" className="mb-8" />
+        <Section title={`projects.${id}.title`}>
+            <PageHeader backTo="/projects" backText={t('pages.projects.title')} />
 
-            {/* Title */}
-            <div className="flex flex-col justify-start gap-2 mb-12">
-                <Title title={`projects.${id}.title`} />
-                <p>{t(`projects.${id}.description`)}</p>
-            </div>
+            {/* Description */}
+            <p className="mb-8">
+                {t(`projects.${id}.description`)}
+            </p>
             
             {/* Main content */}
             <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-6 mb-8">
@@ -107,25 +105,25 @@ const ProjectPage = () => {
 
                 {/* Text content */}
                 <div className="flex flex-col gap-16">
-                    <Section 
+                    <Content 
                         title={t('pages.projects.summary')}
                         text={t(`projects.${id}.summary`)}
                     />
-                    <Section 
+                    <Content 
                         title={t('pages.projects.methodology')}
                         text={t(`projects.${id}.methodology`)}
                     />
-                    <Section 
+                    <Content 
                         title={t('pages.projects.results')}
                         text={t(`projects.${id}.result`)}
                     />
                     {/* Gallery */}
                     {projectData.images &&
-                        <Section 
+                        <Content 
                             title={t('pages.projects.gallery')}
                         >
                             <Gallery images={projectData.images} />
-                        </Section>
+                        </Content>
                     }
                 </div>
             </div>
@@ -156,7 +154,7 @@ const ProjectPage = () => {
                     </Button>
                 ) : <div />}
             </div>
-        </section>
+        </Section>
     )
 }
 

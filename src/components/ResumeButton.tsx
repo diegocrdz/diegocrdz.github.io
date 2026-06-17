@@ -7,10 +7,15 @@ export default function ResumeButton() {
     const { t } = useTranslation()
 
     return (
-        <Button variant="link" size="sm" className="fixed top-4 right-8 z-50 h-10 flex items-center" asChild>
+        <Button
+            variant="link"
+            size="sm"
+            className="h-10 p-0"
+            asChild
+        >
             <Link to={t('resume.link')} target="_blank">
                 {t('resume.cta')}
-                <ArrowUpRight className="h-3 w-3" />
+                <ArrowUpRight />
             </Link>
         </Button>
     )

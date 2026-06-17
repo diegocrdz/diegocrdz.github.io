@@ -10,10 +10,11 @@ import {
 } from '@/components/ui/field'
 import { Textarea } from '@/components/ui/textarea'
 import { Mail, ArrowUpRight } from 'lucide-react'
+import { Link } from 'react-router'
 
 const links = [
     { name: 'GitHub', href: 'https://github.com/diegocrdz', icon: <Mail /> },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/diegocrdz', icon: <Mail /> },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/diegocordovarodriguez', icon: <Mail /> },
     { name: 'Email', href: 'mailto:diegocordova.rdz@gmail.com', icon: <Mail /> },
 ]
 
@@ -35,11 +36,11 @@ const Contact = () => {
             <div className="flex gap-3 mb-12">
                 {links.map((link) => (
                     <Button variant="outline" asChild key={link.name}>
-                        <a href={link.href} target="_blank" className="flex items-center gap-2">
+                        <Link to={link.href} target="_blank">
                             {link.icon}
                             {link.name}
                             <ArrowUpRight className="h-3 w-3" />
-                        </a>
+                        </Link>
                     </Button>
                 ))}
             </div>

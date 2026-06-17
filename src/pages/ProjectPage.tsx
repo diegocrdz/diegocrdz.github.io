@@ -6,7 +6,7 @@
  * and renders the project details
  */
 
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams, Navigate, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -40,10 +40,10 @@ const Section = ({ title, text, children }: { title: string, text?: string, chil
 
 const LinkButton = ({ href, children }: { href: string, children: React.ReactNode }) => (
     <Button variant="link" asChild className="p-0">
-        <a href={href} target="_blank">
+        <Link to={href} target="_blank">
             {children}
             <ArrowUpRight />
-        </a>
+        </Link>
     </Button>
 )
 
@@ -135,24 +135,24 @@ const ProjectPage = () => {
                 {projects[projects.indexOf(projectData) - 1] ? (
                     <div className="flex flex-col items-center justify-start gap-2">
                         <Button variant="link" asChild>
-                            <a href={`/projects/${prevProject.id}`}>
+                            <Link to={`/projects/${prevProject.id}`}>
                                 <ArrowLeft />
                                 <span className="max-w-30 md:max-w-none truncate">
                                     {t(`projects.${prevProject.id}.title`)}
                                 </span>
-                            </a>
+                            </Link>
                         </Button>
                     </div>
                 ) : <div />}
 
                 {projects[projects.indexOf(projectData) + 1] ? (
                     <Button variant="link" asChild>
-                        <a href={`/projects/${nextProject.id}`}>
+                        <Link to={`/projects/${nextProject.id}`}>
                             <span className="max-w-30 md:max-w-none truncate">
                                 {t(`projects.${nextProject.id}.title`)}
                             </span>
                             <ArrowRight />
-                        </a>
+                        </Link>
                     </Button>
                 ) : <div />}
             </div>

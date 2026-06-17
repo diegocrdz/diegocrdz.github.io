@@ -20,9 +20,9 @@ export default function FeaturedProjects() {
         <div className="flex items-end justify-between gap-4 mb-12">
             <h2 className="text-3xl font-medium">{t('featured.title')}</h2>
             <Button variant="link" size="sm" asChild className="p-0">
-                <a href="/projects">
+                <Link to="/projects">
                     {t('featured.viewAll')}
-                </a>
+                </Link>
             </Button>
         </div>
         <div className="grid gap-8 md:grid-cols-3">

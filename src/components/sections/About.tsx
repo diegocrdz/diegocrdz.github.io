@@ -15,7 +15,7 @@ export default function About() {
                     {t('about.title')}
                 </h2>
                 <p>
-                    {t('about.content')}
+                    {t('about.p1')}
                 </p>
                 <Button variant="link" className="px-0" asChild>
                     <Link to="/about">

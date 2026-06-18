@@ -37,8 +37,8 @@ const Navbar = () => {
     const { t } = useTranslation()
 
     return (
-        <nav className="fixed top-auto bottom-4 md:bottom-auto md:top-4 left-0 w-full flex items-center justify-center z-50 px-6 md:px-0">
-            <div className="border border-border rounded-full bg-background/50 backdrop-blur-sm w-full md:w-auto">
+        <nav className="fixed top-auto bottom-4 md:bottom-auto md:top-4 left-0 w-full flex items-center justify-center z-50">
+            <div className="border border-border rounded-full bg-background/50 backdrop-blur-sm">
                 <div className="h-10 px-3 flex items-center justify-center">            
                     {/* Nav Links */}
                     <NavigationMenu className="flex">

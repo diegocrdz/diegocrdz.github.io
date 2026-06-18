@@ -18,23 +18,21 @@
         "timeline": [
             {
                 "year": "2023 - 2027",
-                "title": "Ingeniería en Tecnologías Computacionales en Tec de Monterrey",
+                "location": "Tec de Monterrey, Campus Santa Fe",
+                "title": "Ingeniería en Tecnologías Computacionales",
                 "description": "Cursando la carrera de Ingeniería en Tecnologías Computacionales, con enfoque en desarrollo de software, machine learning y análisis de datos."
             },
             {
-                "year": "2021 - 2023",
-                "title": "Preparatoria en Tec de Monterrey, Campus Santa Fe",
-                "description": "Reconocimiento de excelencia con promedio acumulado de 9.6 / 10. Preparatoria completada en el Tecnológico de Monterrey con beca de excelencia académica."
+                "year": "2026",
+                "location": "University of British Columbia",
+                "title": "Intercambio Académico en University of British Columbia",
+                "description": "Participé en un programa de intercambio académico en la University of British Columbia, tomando cursos de ciencia de datos y lenguaje en el contexto de la IA."
             },
             {
-                "year": "2017 - 2021",
-                "title": "Secundaria en La Salle de Seglares",
-                "description": "Promedio acumulado de 9.7 / 10 a lo largo de los tres años de secundaria."
-            },
-            {
-                "year": "2011 - 2017",
-                "title": "Primaria en La Salle de Seglares",
-                "description": "Promedio acumulado de 9.3 / 10 a lo largo de los seis años de primaria."
+                "year": "2024 - 2025",
+                "location": "RSec",
+                "title": "Becario en Inteligencia Artificial",
+                "description": "Trabajé como becario en RSec, empresa multinacional de ciberseguridad, donde trabajé en proyectos relacionados con traducción en tiempo real impulsada por IA y completé un programa de formación integral en ciberseguridad que abarcó análisis de riesgos, cumplimiento normativo y herramientas forenses."
             }
         ]
     },
@@ -57,6 +55,7 @@
             "results": "Resultados",
             "year": "Año",
             "stack": "Herramientas",
+            "links": "Enlaces",
             "gallery": "Galería"
         },
         "contact": {

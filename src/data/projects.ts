@@ -17,9 +17,8 @@ export const projects: Project[] = [
   {
     id: 'dittravel',
     tags: ['Astro', 'Node.js', 'Prisma ORM', 'Tailwind CSS'],
-    github: 'https://github.com/username/dittravel',
+    github: 'https://github.com/dittravel',
     thumbnail: '/projects/dittravel/dittravel-1.png',
-    demo: 'https://dittravel.com',
     images: ['/projects/dittravel/dittravel-1.png', '/projects/dittravel/dittravel-2.png'],
     year: 2026
   },

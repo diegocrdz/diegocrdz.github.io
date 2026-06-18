@@ -17,7 +17,7 @@ import Section from '@/components/Section'
 import PageHeader from '@/components/PageHeader'
 
 const DataSection = ({ title, children }: { title: string, children: React.ReactNode }) => (
-    <div className="text-sm mb-4">
+    <div className="flex flex-col gap-2 text-sm mb-4">
         <p className="text-muted-foreground font-medium">
             {title}
         </p>
@@ -79,7 +79,7 @@ const ProjectPage = () => {
 
                     {/* Tags */}
                     <DataSection title={t('pages.projects.stack')}>
-                        <div className="flex flex-col gap-2 flex-wrap">
+                        <div className="flex flex-row md:flex-col gap-2 flex-wrap">
                             {projectData.tags.map((tag) => (
                                 <Badge key={tag} variant="default">
                                     {tag}
@@ -89,18 +89,22 @@ const ProjectPage = () => {
                     </DataSection>
 
                     {/* Links */}
-                    <div className="flex flex-col items-start gap-2">
-                        {projectData.github && (
-                            <LinkButton href={projectData.github}>
-                                GitHub
-                            </LinkButton>
-                        )}
-                        {projectData.demo && (
-                            <LinkButton href={projectData.demo}>
-                                Demo
-                            </LinkButton>
-                        )}
-                    </div>
+                    {(projectData.github || projectData.demo) &&
+                        <DataSection title={t('pages.projects.links')}>
+                            <div className="flex flex-row md:flex-col gap-2 items-start">
+                                {projectData.github && (
+                                    <LinkButton href={projectData.github}>
+                                        GitHub
+                                    </LinkButton>
+                                )}
+                                {projectData.demo && (
+                                    <LinkButton href={projectData.demo}>
+                                        Demo
+                                    </LinkButton>
+                                )}
+                            </div>
+                        </DataSection>
+                    }
                 </div>
 
                 {/* Text content */}

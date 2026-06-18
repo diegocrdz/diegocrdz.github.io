@@ -19,7 +19,7 @@
             {
                 "year": "2023 - 2027",
                 "location": "Tec de Monterrey, Santa Fe Campus",
-                "title": "B.S. in Computer Science and Technology at Tec de Monterrey",
+                "title": "B.S. in Computer Science and Technology",
                 "description": "Pursuing a degree in Computer Science and Technology, focusing on software development, machine learning, and data analysis."
             },
             {
@@ -29,9 +29,9 @@
                 "description": "Participating in an exchange program at the University of British Columbia, taking courses in data science and language in the age of AI."
             },
             {
-                "year": "2024-2025",
+                "year": "2024 - 2025",
                 "location": "RSec",
-                "title": "AI Intern at RSec",
+                "title": "AI Intern",
                 "description": "Completed a part-time internship at RSec, a multinational cybersecurity company, where I worked on projects involving AI-powered real-time translation and completed a comprehensive cybersecurity training program covering risk analysis, compliance, and digital forensics."
             }
         ]
@@ -55,6 +55,7 @@
             "results": "Results",
             "year": "Year",
             "stack": "Tools",
+            "links": "Links",
             "gallery": "Gallery"
         },
         "contact": {

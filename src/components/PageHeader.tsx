@@ -1,5 +1,6 @@
 import BackButton from '@/components/BackButton'
 import ResumeButton from '@/components/ResumeButton'
+import { useTranslation } from 'react-i18next'
 
 interface PageHeaderProps {
     showBackButton?: boolean
@@ -11,9 +12,11 @@ interface PageHeaderProps {
 const PageHeader = ({
     showBackButton = true,
     backTo = "/",
-    backText = "Home",
+    backText = "pages.home",
     showResume = true
 }: PageHeaderProps) => {
+    const { t } = useTranslation()
+
     return (
         <div className="
             fixed px-6 h-10 top-4 left-0 right-0 max-w-4xl mx-auto
@@ -24,7 +27,7 @@ const PageHeader = ({
                 {showBackButton && backTo && backText &&
                     <BackButton
                         to={backTo}
-                        text={backText}
+                        text={t(backText)}
                     />
                 }
             </div>

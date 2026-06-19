@@ -15,8 +15,8 @@ const LangToggle = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon">
-          <Languages className="h-[1.2rem] w-[1.2rem]" />
+        <Button variant="ghost" className="rounded-full">
+          <Languages />
           <span className="sr-only">Toggle language</span>
         </Button>
       </DropdownMenuTrigger>

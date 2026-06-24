@@ -1,13 +1,14 @@
 import ProjectsGrid from '@/components/sections/ProjectsGrid'
-import PageHeader from '@/components/PageHeader'
 import Section from '@/components/Section'
+import Layout from '@/components/Layout'
 
 const Projects = () => {
   return (
-    <Section title="pages.projects.title">
-      <PageHeader />
-      <ProjectsGrid />
-    </Section>
+    <Layout title="pages.projects.title">
+      <Section title="pages.projects.title">
+        <ProjectsGrid />
+      </Section>
+    </Layout>
   )
 }
 

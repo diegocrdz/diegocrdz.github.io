@@ -12,9 +12,10 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { projects } from '@/data/projects'
 import { ArrowUpRight, ArrowLeft, ArrowRight } from 'lucide-react'
+
 import Gallery from '@/components/Gallery'
 import Section from '@/components/Section'
-import PageHeader from '@/components/PageHeader'
+import Layout from '@/components/Layout'
 
 const DataSection = ({ title, children }: { title: string, children: React.ReactNode }) => (
     <div className="flex flex-col gap-2 text-sm mb-4">
@@ -60,105 +61,105 @@ const ProjectPage = () => {
     }
 
     return (
-        <Section title={`projects.${id}.title`}>
-            <PageHeader backTo="/projects" backText={t('pages.projects.title')} />
+        <Layout title={`projects.${id}.title`} backTo="/projects" backText={t('pages.projects.title')}>
+            <Section title={`projects.${id}.title`}>
+                {/* Description */}
+                <p className="mb-8">
+                    {t(`projects.${id}.description`)}
+                </p>
+                
+                {/* Main content */}
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-6 mb-8">
+                    {/* Data */}
+                    <div className="md:sticky top-16 self-start">
+                        {/* Year */}
+                        <DataSection title={t('pages.projects.year')}>
+                            {projectData.year}
+                        </DataSection>
 
-            {/* Description */}
-            <p className="mb-8">
-                {t(`projects.${id}.description`)}
-            </p>
-            
-            {/* Main content */}
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-6 mb-8">
-                {/* Data */}
-                <div className="md:sticky top-16 self-start">
-                    {/* Year */}
-                    <DataSection title={t('pages.projects.year')}>
-                        {projectData.year}
-                    </DataSection>
-
-                    {/* Tags */}
-                    <DataSection title={t('pages.projects.stack')}>
-                        <div className="flex flex-row md:flex-col gap-2 flex-wrap">
-                            {projectData.tags.map((tag) => (
-                                <Badge key={tag} variant="default">
-                                    {tag}
-                                </Badge>
-                            ))}
-                        </div>
-                    </DataSection>
-
-                    {/* Links */}
-                    {(projectData.github || projectData.demo) &&
-                        <DataSection title={t('pages.projects.links')}>
-                            <div className="flex flex-row md:flex-col gap-2 items-start">
-                                {projectData.github && (
-                                    <LinkButton href={projectData.github}>
-                                        GitHub
-                                    </LinkButton>
-                                )}
-                                {projectData.demo && (
-                                    <LinkButton href={projectData.demo}>
-                                        Demo
-                                    </LinkButton>
-                                )}
+                        {/* Tags */}
+                        <DataSection title={t('pages.projects.stack')}>
+                            <div className="flex flex-row md:flex-col gap-2 flex-wrap">
+                                {projectData.tags.map((tag) => (
+                                    <Badge key={tag} variant="default">
+                                        {tag}
+                                    </Badge>
+                                ))}
                             </div>
                         </DataSection>
-                    }
-                </div>
 
-                {/* Text content */}
-                <div className="flex flex-col gap-16">
-                    <Content 
-                        title={t('pages.projects.summary')}
-                        text={t(`projects.${id}.summary`)}
-                    />
-                    <Content 
-                        title={t('pages.projects.methodology')}
-                        text={t(`projects.${id}.methodology`)}
-                    />
-                    <Content 
-                        title={t('pages.projects.results')}
-                        text={t(`projects.${id}.result`)}
-                    />
-                    {/* Gallery */}
-                    {projectData.images &&
+                        {/* Links */}
+                        {(projectData.github || projectData.demo) &&
+                            <DataSection title={t('pages.projects.links')}>
+                                <div className="flex flex-row md:flex-col gap-2 items-start">
+                                    {projectData.github && (
+                                        <LinkButton href={projectData.github}>
+                                            GitHub
+                                        </LinkButton>
+                                    )}
+                                    {projectData.demo && (
+                                        <LinkButton href={projectData.demo}>
+                                            Demo
+                                        </LinkButton>
+                                    )}
+                                </div>
+                            </DataSection>
+                        }
+                    </div>
+
+                    {/* Text content */}
+                    <div className="flex flex-col gap-16">
                         <Content 
-                            title={t('pages.projects.gallery')}
-                        >
-                            <Gallery images={projectData.images} />
-                        </Content>
-                    }
+                            title={t('pages.projects.summary')}
+                            text={t(`projects.${id}.summary`)}
+                        />
+                        <Content 
+                            title={t('pages.projects.methodology')}
+                            text={t(`projects.${id}.methodology`)}
+                        />
+                        <Content 
+                            title={t('pages.projects.results')}
+                            text={t(`projects.${id}.result`)}
+                        />
+                        {/* Gallery */}
+                        {projectData.images &&
+                            <Content 
+                                title={t('pages.projects.gallery')}
+                            >
+                                <Gallery images={projectData.images} />
+                            </Content>
+                        }
+                    </div>
                 </div>
-            </div>
 
-            {/* Next and previous project links */}
-            <div className="flex justify-between mt-16">
-                {projects[projects.indexOf(projectData) - 1] ? (
-                    <div className="flex flex-col items-center justify-start gap-2">
+                {/* Next and previous project links */}
+                <div className="flex justify-between mt-16">
+                    {projects[projects.indexOf(projectData) - 1] ? (
+                        <div className="flex flex-col items-center justify-start gap-2">
+                            <Button variant="link" asChild>
+                                <Link to={`/projects/${prevProject.id}`}>
+                                    <ArrowLeft />
+                                    <span className="max-w-30 md:max-w-none truncate">
+                                        {t(`projects.${prevProject.id}.title`)}
+                                    </span>
+                                </Link>
+                            </Button>
+                        </div>
+                    ) : <div />}
+
+                    {projects[projects.indexOf(projectData) + 1] ? (
                         <Button variant="link" asChild>
-                            <Link to={`/projects/${prevProject.id}`}>
-                                <ArrowLeft />
+                            <Link to={`/projects/${nextProject.id}`}>
                                 <span className="max-w-30 md:max-w-none truncate">
-                                    {t(`projects.${prevProject.id}.title`)}
+                                    {t(`projects.${nextProject.id}.title`)}
                                 </span>
+                                <ArrowRight />
                             </Link>
                         </Button>
-                    </div>
-                ) : <div />}
-
-                {projects[projects.indexOf(projectData) + 1] ? (
-                    <Button variant="link" asChild>
-                        <Link to={`/projects/${nextProject.id}`}>
-                            <span className="max-w-30 md:max-w-none truncate">
-                                {t(`projects.${nextProject.id}.title`)}
-                            </span>
-                            <ArrowRight />
-                        </Link>
-                    </Button>
-                ) : <div />}
-            </div>
-        </Section>
+                    ) : <div />}
+                </div>
+            </Section>
+        </Layout>
     )
 }
 

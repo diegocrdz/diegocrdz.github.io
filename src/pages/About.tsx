@@ -1,14 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import Timeline from '@/components/Timeline'
-import PageHeader from '@/components/PageHeader'
 import Section from '@/components/Section'
+import Layout from '@/components/Layout'
 
 const About = () => {
     const { t } = useTranslation();
 
     return (
-        <>
-            <PageHeader />
+        <Layout title="pages.about">
             <Section title="pages.about">
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-col text-lg gap-8">
@@ -32,7 +31,7 @@ const About = () => {
                     ))}
                 />
             </Section>
-        </>
+        </Layout>
     )
 }
 

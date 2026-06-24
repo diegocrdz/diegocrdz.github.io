@@ -10,8 +10,9 @@ import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+
 import Section from '@/components/Section'
-import PageHeader from '@/components/PageHeader'
+import Layout from '@/components/Layout'
 
 const links = [
     { name: 'GitHub', href: 'https://github.com/diegocrdz', icon: <Mail /> },
@@ -32,55 +33,56 @@ const Contact = () => {
     }
     
     return (
-        <Section title="pages.contact.title">
-            <PageHeader />
-            <div className="flex flex-col md:flex-row gap-3 mb-12">
-                {links.map((link) => (
-                    <Button variant="outline" asChild key={link.name}>
-                        <Link to={link.href} target="_blank">
-                            {link.icon}
-                            {link.name}
-                            <ArrowUpRight className="h-3 w-3" />
-                        </Link>
-                    </Button>
-                ))}
-            </div>
+        <Layout title="pages.contact.title">
+            <Section title="pages.contact.title">
+                <div className="flex flex-col md:flex-row gap-3 mb-12">
+                    {links.map((link) => (
+                        <Button variant="outline" asChild key={link.name}>
+                            <Link to={link.href} target="_blank">
+                                {link.icon}
+                                {link.name}
+                                <ArrowUpRight className="h-3 w-3" />
+                            </Link>
+                        </Button>
+                    ))}
+                </div>
 
-            <h2 className="text-2xl font-medium mb-4">
-                {t('pages.contact.form.title')}
-            </h2>
-            <FieldSet>
-                <Field>
-                    <FieldLabel>{t('pages.contact.form.name')}</FieldLabel>
-                    <Input
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder={t('pages.contact.form.namePlaceholder')}
-                    />
-                </Field>
-                <Field>
-                    <FieldLabel>{t('pages.contact.form.email')}</FieldLabel>
-                    <Input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder={t('pages.contact.form.emailPlaceholder')}
-                    />
-                </Field>
-                <Field>
-                    <FieldLabel>{t('pages.contact.form.message')}</FieldLabel>
-                    <Textarea
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        placeholder={t('pages.contact.form.messagePlaceholder')}
-                        rows={5}
-                    />
-                </Field>
-                <Button onClick={handleSubmit} className="self-start">
-                    {t('pages.contact.form.submit')}
-                </Button>
-            </FieldSet>
-        </Section>
+                <h2 className="text-2xl font-medium mb-4">
+                    {t('pages.contact.form.title')}
+                </h2>
+                <FieldSet>
+                    <Field>
+                        <FieldLabel>{t('pages.contact.form.name')}</FieldLabel>
+                        <Input
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            placeholder={t('pages.contact.form.namePlaceholder')}
+                        />
+                    </Field>
+                    <Field>
+                        <FieldLabel>{t('pages.contact.form.email')}</FieldLabel>
+                        <Input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder={t('pages.contact.form.emailPlaceholder')}
+                        />
+                    </Field>
+                    <Field>
+                        <FieldLabel>{t('pages.contact.form.message')}</FieldLabel>
+                        <Textarea
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            placeholder={t('pages.contact.form.messagePlaceholder')}
+                            rows={5}
+                        />
+                    </Field>
+                    <Button onClick={handleSubmit} className="self-start">
+                        {t('pages.contact.form.submit')}
+                    </Button>
+                </FieldSet>
+            </Section>
+        </Layout>
     )
 }
 

@@ -70,6 +70,13 @@
         "viewMore": "Ver más"
     },
     "projects": {
+        "shortcuts": {
+            "title": "Shortcuts",
+            "description": "Aplicación de escritorio para Windows que permite configurar y ejecutar cualquier aplicación en el sistema",
+            "summary": "Shortcuts es una aplicación desarrollada como proyecto personal para mejorar la productividad y flexibilidad para organizar las aplicaciones de cualquier computadora. Se sincroniza automáticamente con bibliotecas de juegos como Steam, Epic Games y Riot Games, permitiendo organizar todo con categorías y etiquetas personalizadas para encontrar y ejecutar cualquier aplicación en segundos.",
+            "methodology": "El proyecto se desarrolló utilizando Tauri para la creación de aplicaciones de escritorio ligeras y React para la interfaz de usuario.",
+            "result": "La aplicación fue lanzada como proyecto de código abierto en GitHub, con la intención de que otros desarrolladores puedan contribuir y mejorar la herramienta a futuro."
+        },
         "dittravel": {
             "title": "Dittravel",
             "description": "Aplicación web para gestión de viajes, desde la creación de solicitudes hasta su aprobación y control administrativo completo.",

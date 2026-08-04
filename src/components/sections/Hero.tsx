@@ -12,7 +12,7 @@ const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center p-6">
+    <div className="h-screen w-full flex items-center justify-center p-6">
       <div className="absolute inset-0">
         <InteractiveDotGrid showLabel={false} />
       </div>

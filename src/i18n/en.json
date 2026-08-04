@@ -71,6 +71,13 @@
         "bottomText": "Select an image to view it in full size."
     },
     "projects": {
+        "shortcuts": {
+            "title": "Shortcuts",
+            "description": "Desktop application for Windows that allows configuring and launching any application on the system.",
+            "summary": "Shortcuts is a desktop application developed as a personal project to enhance productivity and flexibility in organizing applications on any computer. It automatically syncs with game libraries like Steam, Epic Games, and Riot Games, allowing users to organize everything with custom categories and tags to find and launch any application in seconds.",
+            "methodology": "The project was developed using Tauri for creating lightweight desktop applications and React for the user interface.",
+            "result": "The application was released as an open-source project on GitHub, with the intention of allowing other developers to contribute and improve the tool in the future."
+        },
         "dittravel": {
             "title": "Dittravel",
             "description": "Web App for travel management, from request creation to approval and full administration control.",

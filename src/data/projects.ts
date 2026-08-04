@@ -4,16 +4,24 @@
  */
 
 export interface Project {
-    id: string
-    tags: string[]
-    github?: string
-    demo?: string
-    thumbnail?: string
-    images?: string[]
-    year: number
+  id: string
+  tags: string[]
+  github?: string
+  demo?: string
+  thumbnail?: string
+  images?: string[]
+  year: number
 }
 
 export const projects: Project[] = [
+  {
+    id: 'shortcuts',
+    tags: ['Tauri', 'React', 'TypeScript'],
+    github: 'https://github.com/diegocrdz/shortcuts',
+    thumbnail: '/projects/shortcuts/shortcuts-thumbnail.png',
+    images: ['/projects/shortcuts/shortcuts-1.png', '/projects/shortcuts/shortcuts-2.png', '/projects/shortcuts/shortcuts-3.png', '/projects/shortcuts/shortcuts-4.png'],
+    year: 2026
+  },
   {
     id: 'dittravel',
     tags: ['Astro', 'Node.js', 'Prisma ORM', 'Tailwind CSS'],
